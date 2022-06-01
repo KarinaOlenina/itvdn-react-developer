@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+ background-color: darkgray;
+}
+
+.css {
+    background-color: darkcyan;
+}
+
+#js {
+    background-color: indianred;
+}
+
+.logo {
+    background-color: darkgray;
+}
+
+.it {
+    font-weight: bold;
+    color: darkgoldenrod;
+}
+
+.vdn {
+    font-weight: normal;
+}
