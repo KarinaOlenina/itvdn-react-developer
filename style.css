@@ -3,9 +3,9 @@ body {
     padding: 0;
 }
 
-p {
- background-color: darkgray;
-}
+/*p {*/
+/* background-color: darkgray;*/
+/*}*/
 
 .css {
     background-color: darkcyan;
@@ -26,4 +26,70 @@ p {
 
 .vdn {
     font-weight: normal;
+}
+
+/*Проверить*/
+.logo .vdn {
+    width: 200px;
+    height: 200px;
+    background-color: darkred;
+    opacity: .7;
+}
+
+.gray-box {
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+}
+
+.social {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+.information p {
+    padding: 15px;
+    margin: 10px;
+    background-color: #cbcaca;
+    border-left: 2px solid #2b2e2a;
+}
+
+.information p:nth-child(2) {
+    background-color: #ffebdf;
+}
+
+.information p:nth-child(3) {
+    background-color: #c2d3ba;
+}
+
+.information p:nth-child(4) {
+    background-color: #d9ead3;
+}
+
+.menu4 {
+    margin: 10px;
+    border: 1px solid #2b2e2a;
+}
+
+.menu4 div:nth-child(1) {
+    background-color: #fff9e8;
+}
+
+.menu4 div:nth-child(n) {
+    border: 1px solid #2b2e2a;
+    padding: 20px;
+}
+
+.box4_6 {
+    margin: 10px;
+    padding: 20px;
+    background-color: #d9ead3;
+}
+
+.box4_6 button{
+    border: none;
+    height: 40px;
+    width: 70px;
+    background-color: #9ba894;
 }
