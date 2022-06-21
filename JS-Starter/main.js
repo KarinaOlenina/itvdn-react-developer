@@ -873,24 +873,174 @@
 // Задание:
 // Создайте функцию, которая принимает массив значений и возвращает массив с дублирующимися значениями или null если повторяющихся значений в массиве нет.
 
-let arr = [1, 3, 5, 7, 10, 38, 4, 3, 7, 38, 6, 9, 0, 1, 1, 1, 3, 3];
+// let arr = [1, 3, 5, 7, 10, 38, 4, 3, 7, 38, 6, 9, 0, 1, 1, 1, 3, 3];
+//
+// function createArrFromDuplicatedElements(arr) {
+//
+//     let arrWithoutDuplicate = [];
+//     let arrFromDuplicate = []
+//
+//     arr.forEach(element => {
+//         if (!arrWithoutDuplicate.includes(element)) {
+//             arrWithoutDuplicate.push(element);
+//         } else if (!arrFromDuplicate.includes(element)) {
+//             arrFromDuplicate.push(element);
+//         }
+//     })
+//
+//     console.log(arrFromDuplicate);
+//     return arrWithoutDuplicate;
+// }
+//
+// console.log(createArrFromDuplicatedElements(arr));
 
-function createArrFromDuplicatedElements(arr) {
+// Задание:
+// Исправьте ошибку в коде, связанную с областями видимостей.
 
-    let arrWithoutDuplicate = [];
-    let arrFromDuplicate = [];
+// // названия товаров
+// let names = [];
+// names[0] = "Бумага офисная А4, 80 г/м2, 500 л";
+// names[1] = "Биндеры для бумаги 51 мм";
+// names[2] = "Ручка шариковая синяя";
+//
+// // цены на товар
+// let prices = [];
+// prices[0] = 280.25; // Бумага офисная А4, 80 г/м2, 500 л
+// prices[1] = 56;     // Биндеры для бумаги 51 мм
+// prices[2] = 12.50;  // Ручка шариковая синяя
+//
+// let count = [];
+//
+// initCountArray();
+// calculateSum();
+//
+// function initCountArray() {
+//     for (let i = 0; i < names.length; i++) {
+//         const productName = names[i];
+//         let countToBuy = +prompt("Укажите количество для " + productName);
+//
+//         if (isNaN(countToBuy))
+//             countToBuy = 0;
+//
+//         count.push(countToBuy);
+//     }
+// }
+//
+// function calculateSum() {
+//     let totalSum = 0;
+//     for (let i = 0; i < names.length; i++) {
+//         const productName = names[i];
+//         const productPrice = prices[i];
+//         const boughtCount = count[i];
+//
+//         let price = productPrice * boughtCount;
+//         totalSum += price;
+//         console.log(`Куплено ${productName} на сумму ${price}`);
+//     }
+//     console.log("Всего продуктов куплено на " + totalSum);
+// }
 
-    arr.forEach(element => {
-        if (!arrWithoutDuplicate.includes(element)) {
-            arrWithoutDuplicate.push(element);
-        } else if (!arrFromDuplicate.includes(element)) {
-            arrFromDuplicate.push(element);
-        }
-    })
+// Задание:
+// Исправьте ошибку в сценарии, не изменяя способа определения функций (функции должны создаваться как именованные функции-выражения).
 
-    console.log(arrFromDuplicate)
-    return arrWithoutDuplicate;
-}
+// let initCountArray = function initCountArray() {
+//     for (let i = 0; i < names.length; i++) {
+//         const productName = names[i];
+//         let counttoBuy = +prompt("Укажите количество для " + productName);
+//
+//         if (isNaN(counttoBuy))
+//             counttoBuy = 0;
+//
+//         count.push(counttoBuy);
+//     }
+// }
+//
+// let calculateSum = function calculateSum() {
+//     let totalSum = 0;
+//     for (let i = 0; i < names.length; i++) {
+//         const productName = names[i];
+//         const productPrice = prices[i];
+//         const boughtCount = count[i];
+//
+//         let price = productPrice * boughtCount;
+//         totalSum += price;
+//         console.log(`Куплено ${productName} на сумму ${price}`);
+//     }
+//     console.log("Всего продуктов куплено на " + totalSum);
+// }
+//
+// // названия товаров
+// let names = [];
+// names[0] = "Бумага офисная А4, 80 г/м2, 500 л";
+// names[1] = "Биндеры для бумаги 51 мм";
+// names[2] = "Ручка шариковая синяя";
+//
+// // цены на товар
+// let prices = [];
+// prices[0] = 280.25; // Бумага офисная А4, 80 г/м2, 500 л
+// prices[1] = 56;     // Биндеры для бумаги 51 мм
+// prices[2] = 12.50;  // Ручка шариковая синяя
+//
+// let count = [];
+//
+// initCountArray();
+// calculateSum();
+// Задание:
+// Замените в коде все функции-выражения на стрелочные функции.
 
-console.log(createArrFromDuplicatedElements(arr));
+// let data = [1, 2, 3, 4, 5];
+//
+// let result = data.map((value) => value * value);
+//
+// result.forEach((e) => console.log(e));
+
+// Задание:
+// Перепишите код с использованием функции filter и forEach из ES5.
+
+// let values = [10, 20, 5, 7, 11, 8, 125, 4, 8, 3, 23];
+// // let oddValues = [];
+// // let evenValues = [];
+// // let oddValuesPosition = 0;
+// // let evenValuesPosition = 0;
+//
+// let evenValues = values.filter( item => item % 2 === 0 );
+// let oddValues = values.filter( item => item % 2 !== 0 );
+// // for (let value of values) {
+// //     if (value % 2 === 0) {
+// //         evenValues[evenValuesPosition] = value;
+// //         evenValuesPosition++;
+// //     } else {
+// //         oddValues[oddValuesPosition] = value;
+// //         oddValuesPosition++;
+// //     }
+// // }
+//
+// console.log("Нечетные значения");
+// oddValues.forEach(item => console.log(item))
+// // for (let oddVal of oddValues) {
+// //     console.log(oddVal);
+// // }
+//
+// console.log("Четные значения");
+// evenValues.forEach(item => console.log(item))
+// // for (let evenVal of evenValues) {
+// //     console.log(evenVal);
+// // }
+
+// Задание:
+// Запросите у пользователя число. Выведите все числа в обратном порядке от введенного пользователем значения до 1. Используйте для решения рекурсию.
+
+// let askUserOfNumber = +prompt('Введите число', '')
+//
+// function allNumFromUserNumber(num) {
+//     if (num === 1) {
+//         return console.log(1);
+//     }
+//     console.log(num);
+//     return allNumFromUserNumber(num - 1)
+// }
+//
+// allNumFromUserNumber(askUserOfNumber);
+
+
 
