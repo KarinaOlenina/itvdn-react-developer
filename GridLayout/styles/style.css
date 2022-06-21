@@ -1,0 +1,9 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+:root {
+    --main-color: #86bace;
+    --sub-color-green: #a3d1b3;
+    --sub-color-yelow: #fae087;
+    --sub-color-beige: #fcf5e1;
+    --sub-color-coral: #f26d5b;
+}

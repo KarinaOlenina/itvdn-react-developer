@@ -1,0 +1,138 @@
+.display__grid {
+    display: grid;
+    grid-template-columns: 300px 150px 300px 150px;
+    grid-template-rows: 100px 200px 300px;
+}
+
+.display__grid div {
+    background-color: var(--main-color);
+}
+
+.display__inline-grid {
+    display: inline-grid;
+    grid-template-columns: 300px 150px 300px 150px;
+    grid-template-rows: 100px 200px 300px;
+}
+
+.display__inline-grid div {
+    background-color: var(--sub-color-green);
+}
+
+.gap {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template: repeat(5, 1fr)/ repeat(3, 50%);
+}
+
+.gap div {
+    background-color: var(--sub-color-yelow);
+}
+
+.block__300px {
+    margin: 30px 0;
+    height: 300px;
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+}
+
+.block__300px div {
+    background-color: var(--sub-color-coral);
+}
+
+.columns__5 {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    background-color: var(--sub-color-beige);
+    font-size: 24px;
+}
+
+.named__line {
+    display: grid;
+    grid-template: [lineStart] 100px 200px[lineEnd]/ [line1Start] 100px 200px[line1End];
+}
+
+.named__line div {
+    grid-column: span 2;
+    /*grid-column-start: line1Start;*/
+    /*grid-column-end: line1End;*/
+    background-color: var(--main-color);
+}
+
+.areas__3x4 {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas: 'header header header' 'main main main' 'content content content' 'footer footer footer';
+}
+
+.areas__3x4 div{
+    background-color: var(--sub-color-green);
+}
+
+.areas__3x4 div:nth-child(-n+3) {
+    grid-area: header;
+}
+
+.areas__3x4 div:nth-child(4) {
+    grid-area: main;
+}
+
+.areas__3x4 div:nth-child(7) {
+    grid-area: content;
+}
+
+.areas__3x4 div:nth-child(10) {
+    grid-area: footer;
+}
+
+.logo__block {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(5, 200px);
+    justify-items: center;
+    grid-template-areas: 'logo block' 'menu menu' 'content content' 'footer footer';
+}
+
+.logo__block div {
+    height: 90%;
+    width: 90%;
+    background-color: var(--sub-color-coral);
+}
+
+.block__1 {
+    grid-area: menu;
+}
+
+.block__1_2 {
+    grid-area: block;
+}
+
+.block__2 {
+    grid-area: logo;
+}
+
+.block__3 {
+    grid-area: content;
+}
+
+.block__4 {
+    grid-area: footer;
+}
+
+.self {
+    display: grid;
+    grid-template: repeat(3, 100px)/ repeat(2, 100px);
+}
+
+.self div {
+    background-color: #86bace;
+}
+
+.self_1 {
+    align-self: center;
+    justify-self: center;
+}
