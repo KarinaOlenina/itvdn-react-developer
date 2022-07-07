@@ -1,14 +1,5212 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>ITVDN-JS-Fundamentals</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <!--DOM navigation-->
+
+    <!--Task 2-->
+    <!--    <style>
+            #color-sample {
+                width: 250px;
+                height: 70px;
+                margin: 10px;
+            }
+        </style>-->
+    <!--Task 4-->
+    <!--    <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            table,
+            th,
+            td {
+                border: 1px solid black;
+            }
+
+            td, th {
+                padding: 8px;
+            }
+        </style>-->
+
+    <!--DOM three modification-->
+
+    <!--Task 1-->
+    <!--    <style>
+            div {
+                width: 200px;
+                background-color: #9591b4;
+            }
+
+            p {
+                padding: 15px;
+                border: 2px solid #1b1a26;
+            }
+        </style>-->
+    <!--Task 5-->
+    <!--    <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .user-card {
+                background-color: blanchedalmond;
+                padding: 20px;
+                margin: 10px;
+                border: burlywood;
+                display: inline-block;
+                vertical-align: top;
+                min-height: 400px;
+                min-width: 250px;
+            }
+
+            .user-card p, .user-card ul {
+                padding: 0;
+                margin: 0;
+            }
+
+            .user-card ul {
+                list-style: none;
+            }
+        </style>-->
+
+    <!--Styles-->
+
+    <!--Task 1-->
+    <!--    <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .error {
+                border: 1px solid red;
+                padding: 12px;
+                color: red;
+            }
+        </style>-->
+    <!--Task 3-->
+    <!--    <style>
+            div {
+                background-color: lightblue;
+                padding: 8px;
+                margin: 4px;
+                display: inline-block;
+            }
+
+            .busy-day {
+                color: darkred;
+                background-color: coral;
+            }
+        </style>-->
+    <!--Task 4-->
+    <!--<style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        td, th {
+            padding: 8px;
+        }
+
+        .attention {
+            background-color: lightcoral;
+            color: white;
+        }
+    </style>-->
+    <!--Task 5-->
+    <!--    <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .user-card {
+                background-color: blanchedalmond;
+                padding: 20px;
+                margin: 10px;
+                border: burlywood;
+                display: inline-block;
+                vertical-align: top;
+                min-height: 400px;
+                min-width: 250px;
+            }
+
+            .user-card p,
+            .user-card ul {
+                padding: 0;
+                margin: 0;
+            }
+
+            .user-card ul {
+                list-style: none;
+            }
+
+            .lessFriends {
+                border: 2px solid darkred;
+            }
+        </style>-->
+
+    <!--Events part 1-->
+
+    <!--Task 3-->
+    <!--    <style>
+            .error {
+                color: red;
+                display: none;
+            }
+
+            .error-border {
+                border: 1px solid red;
+            }
+        </style>-->
+    <!--Task 5-->
+    <!--    <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .task-list {
+                width: 500px;
+            }
+
+            #start-message {
+                margin: 10px;
+            }
+
+            .task {
+                display: flex;
+                align-items: center;
+                border: 1px solid gray;
+                padding: 3px 8px;
+                margin: 2px 10px;
+            }
+
+            .task p {
+                margin-left: 4px;
+            }
+
+            .completed {
+                background-color: green;
+                color: white;
+            }
+
+            .completed p {
+                text-decoration: line-through;
+            }
+
+            .input-panel {
+                width: 500px;
+                margin: 8px;
+                padding: 2px;
+            }
+
+            .input-panel button {
+                padding: 4px;
+                width: 25%;
+            }
+
+            .input-panel input {
+                height: 23px;
+                padding-left: 4px;
+                width: 68%;
+            }
+        </style>-->
+
+    <!--Events part 2-->
+
+    <!--Task 1-->
+    <!--    <style>
+            #colorOutput {
+                width: 100px;
+                height: 100px;
+            }
+        </style>-->
+    <!--Task 3-->
+    <!--    <style>
+            div {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                background-color: green;
+                margin: 10px;
+            }
+        </style>-->
+    <!--Task 4-->
+    <!--    <style>
+            #element {
+                width: 100px;
+                height: 100px;
+                background-color: greenyellow;
+                position: absolute;
+            }
+        </style>-->
+    <!--Task 5-->
+    <!--<style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #userList {
+            width: 200px;
+            display: inline-block;
+        }
+
+        #userList > li {
+            cursor: pointer;
+            list-style: none;
+        }
+
+        #userList > li:hover {
+            background-color: orange;
+        }
+
+        #output {
+            display: inline-block;
+            border: 1px solid gray;
+            padding: 10px;
+            vertical-align: top;
+            margin-top: 20px;
+            width: 300px;
+            min-height: 180px;
+        }
+    </style>-->
+
+    <!--Events part 3-->
+
+    <!--Task 2-->
+    <!--    <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            #userList {
+                width: 200px;
+                display: inline-block;
+            }
+
+            #userList > li {
+                cursor: pointer;
+                list-style: none;
+            }
+
+            #userList > li:hover {
+                background-color: orange;
+            }
+
+            #output {
+                display: inline-block;
+                border: 1px solid gray;
+                padding: 10px;
+                vertical-align: top;
+                margin-top: 20px;
+                width: 300px;
+                min-height: 180px;
+            }
+        </style>-->
+    <!--Task 5-->
+    <!--  <style>
+          * {
+              padding: 0;
+              margin: 0;
+          }
+
+          body {
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          }
+
+          #generateButton {
+              height: 5vh;
+              background-color: green;
+              color: white;
+              cursor: pointer;
+              text-align: center;
+              font-size: 24px;
+
+              display: flex;
+              justify-content: center;
+              align-content: center;
+              flex-direction: column;
+          }
+
+          #interactivePanel {
+              position: relative;
+              height: 95vh;
+          }
+
+          .interactiveElement {
+              position: absolute;
+              width: 50px;
+              height: 50px;
+          }
+      </style>-->
+
+    <!--HTML templates-->
+
+    <!--Task 3-->
+    <!--
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .task-list {
+                width: 500px;
+            }
+
+            #start-message {
+                margin: 10px;
+            }
+
+            .task {
+                display: flex;
+                align-items: center;
+                border: 1px solid gray;
+                padding: 3px 8px;
+                margin: 2px 10px;
+            }
+
+            .task p {
+                margin-left: 4px;
+            }
+
+            .completed {
+                background-color: green;
+                color: white;
+            }
+
+            .completed p {
+                text-decoration: line-through;
+            }
+
+            .input-panel {
+                width: 500px;
+                margin: 8px;
+                padding: 2px;
+            }
+
+            .input-panel button {
+                padding: 4px;
+                width: 25%;
+            }
+
+            .input-panel input {
+                height: 23px;
+                padding-left: 4px;
+                width: 68%;
+            }
+        </style>
+    -->
+    <!--Task 4-->
+    <!--    <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            table,
+            th,
+            td {
+                border: 1px solid black;
+            }
+
+            td, th {
+                padding: 8px;
+            }
+        </style>-->
+
+    <!--Constructor functions -->
+
+    <!--Task 3-->
+    <!--    <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .car-info {
+                display: inline-block;
+                margin: 10px 0 10px 10px;
+            }
+        </style>-->
+    <!--Task 5-->
+
+    <!--  Classes-->
+
+    <!--    <style>
+         * {
+             padding: 0;
+             margin: 0;
+         }
+
+         body {
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         }
+
+         .task-list {
+             width: 500px;
+         }
+
+         #start-message {
+             margin: 10px;
+         }
+
+         .task {
+             display: flex;
+             align-items: center;
+             border: 1px solid gray;
+             padding: 3px 8px;
+             margin: 2px 10px;
+         }
+
+         .task p {
+             margin-left: 4px;
+         }
+
+         .completed {
+             background-color: green;
+             color: white;
+         }
+
+         .completed p {
+             text-decoration: line-through;
+         }
+
+         .input-panel {
+             width: 500px;
+             margin: 8px;
+             padding: 2px;
+         }
+
+         .input-panel button {
+             padding: 4px;
+             width: 25%;
+         }
+
+         .input-panel input {
+             height: 23px;
+             padding-left: 4px;
+             width: 68%;
+         }
+     </style>-->
+    <!--Task 4-->
+    <!--    <style>-->
+    <!--        * {-->
+    <!--            padding: 0;-->
+    <!--            margin: 0;-->
+    <!--        }-->
+
+    <!--        body {-->
+    <!--            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;-->
+    <!--        }-->
+
+    <!--        .task-list {-->
+    <!--            width: 500px;-->
+    <!--        }-->
+
+    <!--        #start-message {-->
+    <!--            margin: 10px;-->
+    <!--        }-->
+
+    <!--        .task {-->
+    <!--            display: flex;-->
+    <!--            align-items: center;-->
+    <!--            border: 1px solid gray;-->
+    <!--            padding: 3px 8px;-->
+    <!--            margin: 2px 10px;-->
+    <!--        }-->
+
+    <!--        .task p {-->
+    <!--            margin-left: 4px;-->
+    <!--        }-->
+
+    <!--        .completed {-->
+    <!--            background-color: green;-->
+    <!--            color: white;-->
+    <!--        }-->
+
+    <!--        .completed p {-->
+    <!--            text-decoration: line-through;-->
+    <!--        }-->
+
+    <!--        .input-panel {-->
+    <!--            width: 500px;-->
+    <!--            margin: 8px;-->
+    <!--            padding: 2px;-->
+    <!--        }-->
+
+    <!--        .input-panel button {-->
+    <!--            padding: 4px;-->
+    <!--            width: 25%;-->
+    <!--        }-->
+
+    <!--        .input-panel input {-->
+    <!--            height: 23px;-->
+    <!--            padding-left: 4px;-->
+    <!--            width: 68%;-->
+    <!--        }-->
+    <!--    </style>-->
+    <!--Task 5-->
+    <!--    <style>
+            p {
+                margin: 0;
+                padding: 0;
+            }
+
+            .report-block {
+                border: 1px solid green;
+                background-color: #00800049;
+                margin: 10px;
+                padding: 10px;
+            }
+        </style>-->
+
 </head>
 
+<!--DOM and element search-->
+
+<!--Task 1-->
+<!--<body>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quam est debitis. Architecto quas asperiores
+    blanditiis a fugiat impedit eum dolorem cum rerum dolorum iste amet, ratione assumenda expedita maiores?
+</p>
+<p class="border">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eligendi nemo est? Unde, doloribus, magnam
+    necessitatibus eos quia aliquam eaque quis aspernatur placeat sequi autem officiis, modi a exercitationem totam.
+</p>
+<p class="border">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloremque magni ut corporis, perspiciatis
+    tempore in, accusantium suscipit nemo quod saepe. Autem laudantium adipisci nemo magni repudiandae repellat
+    error. Dolore?
+</p>
+<ul>
+    <li>Item 01</li>
+    <li>Item 02</li>
+    <li>Item 03</li>
+    <li>Item 04</li>
+    <li>Item 05</li>
+</ul>
+<ul class="border">
+    <li>Item 01</li>
+    <li>Item 02</li>
+    <li>Item 03</li>
+    <li>Item 04</li>
+    <li>Item 05</li>
+</ul>
+
+
+<script>
+
+        /*
+        Задание:
+        Найдите на странице все параграфы с классом border и добавьте для них сплошную красную рамку толщиной в 1px
+        */
+        let borderForParagraph = document.querySelectorAll('p.border');
+        for (let value of borderForParagraph) {
+            value.style.border = `1px solid #6652b3`;
+        }
+
+</script>
+
+</body>-->
+<!--Task 2-->
+<!--<body>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quam est debitis. Architecto quas asperiores
+    blanditiis a fugiat impedit eum dolorem cum rerum dolorum iste amet, ratione assumenda expedita maiores?
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eligendi nemo est? Unde, doloribus, magnam
+    necessitatibus eos quia aliquam eaque quis aspernatur placeat sequi autem officiis, modi a exercitationem totam.
+</p>
+<p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloremque magni ut corporis, perspiciatis
+    tempore in, accusantium suscipit nemo quod saepe. Autem laudantium adipisci nemo magni repudiandae repellat
+    error. Dolore?
+</p>
+
+
+<script>
+    /*
+    Задание:
+    getRandomColor функция, которая возвращает случайно сгенерированный цвет в фомрмате #001122
+    Используя функцию getRandomColor добавьте для каждого параграфа рамку случайного цвета
+    */
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    let randomColorForParagraph = document.querySelectorAll('p');
+    for (let p of randomColorForParagraph) {
+        let colorFromGetRandomColor = getRandomColor();
+        p.style.border = `1px solid ${colorFromGetRandomColor}`;
+    }
+</script>
+
+</body>-->
+<!--Task 3-->
+<!--<body>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quam est debitis. Architecto quas asperiores
+    blanditiis a fugiat impedit eum dolorem cum rerum dolorum iste amet, ratione assumenda expedita maiores?
+</p>
+<p class="border">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eligendi nemo est? Unde, doloribus, magnam
+    necessitatibus eos quia aliquam eaque quis aspernatur placeat sequi autem officiis, modi a exercitationem totam.
+</p>
+<p class="border">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloremque magni ut corporis, perspiciatis
+    tempore in, accusantium suscipit nemo quod saepe. Autem laudantium adipisci nemo magni repudiandae repellat
+    error. Dolore?
+</p>
+<ul>
+    <li>Item 01</li>
+    <li>Item 02</li>
+    <li>Item 03</li>
+    <li>Item 04</li>
+    <li>Item 05</li>
+</ul>
+<ul class="border">
+    <li>Item 01</li>
+    <li>Item 02</li>
+    <li>Item 03</li>
+    <li>Item 04</li>
+    <li>Item 05</li>
+</ul>
+
+
+<script>
+    /*
+    Задание:
+    Найдите на странице все элементы li, которые находятся в ul с классом border
+    и добавьте для них сплошную красную рамку толщиной в 1px
+    */
+
+    let liItems = document.querySelectorAll('ul.border li');
+    for (let element of liItems) {
+        element.style.border = '1px solid #6652b3'
+    }
+
+
+</script>
+
+</body>-->
+<!--Task 4-->
+<!--<body>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quam est debitis. Architecto quas asperiores
+    blanditiis a fugiat impedit eum dolorem cum rerum dolorum iste amet, ratione assumenda expedita maiores?
+</p>
+<p class="border">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eligendi nemo est? Unde, doloribus, magnam
+    necessitatibus eos quia aliquam eaque quis aspernatur placeat sequi autem officiis, modi a exercitationem totam.
+</p>
+<p class="border">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloremque magni ut corporis, perspiciatis
+    tempore in, accusantium suscipit nemo quod saepe. Autem laudantium adipisci nemo magni repudiandae repellat
+    error. Dolore?
+</p>
+<ul>
+    <li>Item 01</li>
+    <li>Item 02</li>
+    <li>Item 03</li>
+    <li>Item 04</li>
+    <li>Item 05</li>
+</ul>
+<ul class="border">
+    <li>Item 01</li>
+    <li>Item 02</li>
+    <li>Item 03</li>
+    <li>Item 04</li>
+    <li>Item 05</li>
+</ul>
+
+
+<script>
+    /*
+    Задание:
+    Для первого и последнего элемента li для всех ul на данной странице
+    добавьте сплошную красную рамку толщиной в 1px
+    */
+
+    let firstAndLastUlChild = document.querySelectorAll('ul li:first-child, li:last-child');
+    for (let li of firstAndLastUlChild) {
+        li.style.border = '1px solid #6652b3'
+    }
+
+</script>
+
+</body>-->
+<!--Task 5-->
+<!--<body>
+<div>
+    <p id="first" style="border: 2px solid red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, numquam unde. Aut dolorum in, quia
+        numquam
+        error recusandae est odio nesciunt ut illum blanditiis illo minima, officiis mollitia eaque fugit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum corrupti sapiente, qui eius fuga nisi. Sequi
+        quibusdam sapiente deserunt fuga dolorem commodi perspiciatis, cum soluta possimus quaerat. Labore, eveniet
+        iusto.</p>
+    <a href="https://itvdn.com">ITVDN</a> |
+    <a href="https://itvdn.com/ru/live-online">Live Online</a>
+</div>
+
+<input type="radio" name="answer" checked=""> Yes
+<input type="radio" name="answer"> No
+
+<ul class="my-list" style="border: 2px solid blue;">
+    <li style="margin: 2px; border: 2px solid green;">List Item 1-1</li>
+    <li style="margin: 2px; border: 2px solid green;">List Item 2-1</li>
+    <li style="margin: 2px; border: 2px solid green;">List Item 3-1</li>
+    <li style="margin: 2px; border: 2px solid green;">List Item 4-1</li>
+    <li style="margin: 2px; border: 2px solid green;">List Item 5-1</li>
+</ul>
+
+<article>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est fugit natus sapiente laborum esse. Aperiam eum
+    illum fuga laborum alias consectetur, quibusdam nisi quidem aliquam nulla, quae vero expedita fugiat.
+</article>
+
+<ul class="my-list" style="border: 2px solid blue;">
+    <li style="margin: 2px; border: 2px solid green;">List Item 1-2</li>
+    <li style="margin: 2px; border: 2px solid green;">List Item 2-2</li>
+    <li style="margin: 2px; border: 2px solid green;">List Item 3-2</li>
+    <li style="margin: 2px; border: 2px solid green;">List Item 4-2</li>
+    <li style="margin: 2px; border: 2px solid green;">List Item 5-2</li>
+</ul>
+
+<script>
+    /*
+    Задание:
+    Поменяйте вызовы методов getElementById, getElementsByName, getElementsByTagName, getElementsByClassName
+    на вызовы методов querySelector или querySelectorAll так, чтобы поведение сценария не изменилось.
+    */
+
+    let paragraph = document.querySelector("#first");
+    paragraph.style.border = "2px solid red";
+
+    let radioButtons = document.querySelectorAll("[name = 'answer']");
+    for (const button of radioButtons) {
+        button.checked = !button.checked;
+    }
+
+    let listItems = document.querySelectorAll("li");
+    for (const item of listItems) {
+        item.style.margin = "2px";
+        item.style.border = "2px solid green";
+    }
+
+    let lists = document.querySelectorAll(".my-list");
+    for (const list of lists) {
+        list.style.border = "2px solid blue";
+    }
+</script>
+
+</body>-->
+
+<!--DOM navigation-->
+
+<!--Task 1-->
+<!--<body>
+<div>Вы ввели: <span></span></div>
+
+<script>
+    /*
+    Задание:
+    Выведите значение переменной input в span, расположенный на странице
+    */
+    let input = prompt("Введите сообщение");
+    let messageFromInput = document.querySelector('span');
+    messageFromInput.textContent = `Значение ${input}!`;
+
+</script>
+
+
+</body>-->
+<!--Task 2-->
+<!--<body>
+<div id="color-sample" style="background-color: rgb(142, 5, 109);"></div>
+<p>Цвет: </p>
+
+<script>
+    /*
+    Задание:
+    Поправьте сценарий таким образом, чтобы кроме изменения цвета div#color-sample в параграфе под div выводилось сообщение
+    Цвет: #000000
+    Где #000000 значение, цвета фона элемента div#color-sample
+    */
+
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    let colorSampleDiv = document.querySelector("#color-sample");
+    colorSampleDiv.style.backgroundColor = getRandomColor();
+    let showColorSampleRGB = document.querySelector('p');
+    let textFromP = showColorSampleRGB.textContent;
+    showColorSampleRGB.outerHTML = `${textFromP} <span>${getRandomColor()}</span>`;
+
+</script>
+
+
+</body>-->
+<!--Task 3-->
+<!--<body>
+<table id="statsTable">
+    <tbody>
+    <tr>
+        <th>Месяц</th>
+        <th>Отдел 1</th>
+        <th>Отдел 2</th>
+    </tr>
+    <tr>
+        <td>Январь</td>
+        <td>50</td>
+        <td>120</td>
+    </tr>
+    <tr>
+        <td>Февраль</td>
+        <td>60</td>
+        <td>140</td>
+    </tr>
+    <tr>
+        <td>Март</td>
+        <td>125</td>
+        <td>115</td>
+    </tr>
+    <tr>
+        <td>Апрель</td>
+        <td>87</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>Март</td>
+        <td>95</td>
+        <td>80</td>
+    </tr>
+    <tr>
+        <td>Июнь</td>
+        <td>115</td>
+        <td>90</td>
+    </tr>
+    <tr>
+        <td>Июль</td>
+        <td>125</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>Итого</td>
+        <td id="total1"></td>
+        <td id="total2"></td>
+    </tr>
+    </tbody>
+</table>
+
+<div id="result"></div>
+
+<script>
+    /*
+    Задание:
+    Добавьте строку "Итого" для таблицы statsTable. Напишите сценарий, которым выведите во вторую ячейку этой строки сумму всех числовых значений второй колонки.
+    Выведите в третью ячейку этой строки сумму всех числовых значений из третьей колонки таблицы.
+    В div с id result выведите сообщение "Отдел 1 сделал больше продаж" или "Отдел 2 сделал больше продаж" на основе раннее вычисленных значений в строке "Итого".
+    Используйте любые методы, которые были рассмотрены на прошлых уроках.
+    */
+
+    let table = document.querySelector('#statsTable');
+    let total1 = document.querySelector('#total1');
+    let total2 = document.querySelector('#total2');
+
+    let sum1 = 0;
+    let sum2 = 0;
+
+    for (const row of table.rows) {
+
+        // так как первая строка заголовок - пропускаем ее
+        if(row.rowIndex === 0) continue;
+
+        sum1 += Number(row.cells[1].textContent);
+        sum2 += Number(row.cells[2].textContent);
+
+    }
+
+    total1.textContent = sum1;
+    total2.textContent = sum2;
+
+    let message = sum1 > sum2 ? "Отдел 1 сделал больше продаж" : "Отдел 2 сделал больше продаж";
+    document.querySelector("#result").innerHTML = `<b><span style = color:#c90076>${message}</span></b>`;
+
+</script>
+
+</body>-->
+<!--Task 4-->
+<!--<body>
+<table id="statsTable">
+    <tbody>
+    <tr>
+        <td>Январь</td>
+        <td>120</td>
+    </tr>
+    <tr>
+        <td>Февраль</td>
+        <td>140</td>
+    </tr>
+    <tr>
+        <td>Март</td>
+        <td>115</td>
+    </tr>
+    <tr>
+        <td>Апрель</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>Март</td>
+        <td>80</td>
+    </tr>
+    <tr>
+        <td>Июнь</td>
+        <td>90</td>
+    </tr>
+    <tr>
+        <td>Июль</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <th>Итого</th>
+        <th id="output"></th>
+    </tr>
+    </tbody>
+</table>
+<script>
+    /*
+    Задание:
+    Напишите сценарий, который на основании значений во второй колонке таблицы #statsTable поменяет цвет строк таблицы (tr)
+    Если во второй ячейке значение больше или равно 100 строка должна отображаться зеленым цветом, если значение менее 100 - красным цветом
+    Для смены цвета строки используйте код row.style.backgroundColor = "цвет".
+    */
+
+    let getTdElements = document.querySelectorAll('#statsTable td:nth-child(2)');
+
+    for (const td of getTdElements) {
+
+        let parentOfTd = td.parentElement;
+
+        if (Number(td.textContent) >= 100) {
+            parentOfTd.style.backgroundColor = '#b6d7a8';
+        } else {
+            parentOfTd.style.backgroundColor = '#ea9999';
+        }
+    }
+
+</script>
+
+</body>-->
+<!--Task 5-->
+<!--<body>
+
+<h2>Email адреса пользователей</h2>
+<p id="emailAddressesOutput">
+
+</p>
+<h2>Пользователь, у которого больше всего друзей</h2>
+<p id="greatesFriendsCountOutput"></p>
+
+<p></p>
+
+<h2>Компания пользователя с наибольшим балансом</h2>
+<p id="greatestBalanceCompanyOutput">
+
+</p>
+
+
+<h2>Компания пользователя с наименьшим балансом</h2>
+<p id="lowestBalanceCompanyOutput">
+
+</p>
+
+<script>
+
+    /*
+    Задание:
+    Перепишите код таким образом, чтобы он не поменял своего поведения, но результат работы сценария выводился не в консоль, а в соответствующие p.
+
+    Электронные адреса пользователей (каждый адрес с новой строки) - параграф с id emailAddressesOutput
+    Пользователи с наибольшим количеством друзей (каждый пользователь с новой строки) - параграф с id greatesFriendsCountOutput
+    Компании пользователей с наибольшим балансом - параграф с id greatestBalanceCompanyOutput
+    Компании пользователей с наименьшим балансом - параграф с id lowestBalanceCompanyOutput
+    */
+    // массив сгенерирован с помощью https://next.json-generator.com/
+    let users = [
+        {
+            balance: '1250.89',
+            age: 24,
+            name: {
+                first: 'Golden',
+                last: 'Clements'
+            },
+            company: 'EWAVES',
+            email: 'golden.clements@ewaves.io',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Buchanan Austin'
+                },
+                {
+                    id: 1,
+                    name: 'Richmond Garrison'
+                },
+                {
+                    id: 2,
+                    name: 'Burns Cook'
+                },
+                {
+                    id: 3,
+                    name: 'Sally Mcpherson'
+                },
+                {
+                    id: 4,
+                    name: 'Nina Hood'
+                },
+                {
+                    id: 5,
+                    name: 'Rhonda Anderson'
+                },
+                {
+                    id: 6,
+                    name: 'Mathis Bowen'
+                },
+                {
+                    id: 7,
+                    name: 'Janie Carlson'
+                },
+                {
+                    id: 8,
+                    name: 'Brooke Reilly'
+                },
+                {
+                    id: 9,
+                    name: 'Peters Oliver'
+                }
+            ],
+            favoriteFruit: 'strawberry'
+        },
+        {
+            balance: '3637.94',
+            age: 23,
+            name: {
+                first: 'Francis',
+                last: 'Hebert'
+            },
+            company: 'XPLOR',
+            email: 'francis.hebert@xplor.biz',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Clements Glass'
+                },
+                {
+                    id: 1,
+                    name: 'Gutierrez Padilla'
+                },
+                {
+                    id: 2,
+                    name: 'Noelle Wilkinson'
+                },
+                {
+                    id: 3,
+                    name: 'Kim Sampson'
+                },
+                {
+                    id: 4,
+                    name: 'Luz Palmer'
+                }
+            ],
+            favoriteFruit: 'apple'
+        },
+        {
+            balance: '1106.44',
+            age: 31,
+            name: {
+                first: 'Hale',
+                last: 'Cross'
+            },
+            company: 'EARTHPURE',
+            email: 'hale.cross@earthpure.us',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Terri Clark'
+                },
+                {
+                    id: 1,
+                    name: 'Marie Joyce'
+                },
+                {
+                    id: 2,
+                    name: 'Howell Moses'
+                },
+                {
+                    id: 3,
+                    name: 'Juarez Marshall'
+                },
+                {
+                    id: 4,
+                    name: 'Corinne Grant'
+                },
+                {
+                    id: 5,
+                    name: 'Chandra Ferrell'
+                },
+                {
+                    id: 6,
+                    name: 'Emily Kidd'
+                },
+                {
+                    id: 7,
+                    name: 'Claudine Pollard'
+                },
+                {
+                    id: 8,
+                    name: 'Walter Cooper'
+                },
+                {
+                    id: 9,
+                    name: 'Isabella Hays'
+                }
+            ],
+            favoriteFruit: 'strawberry'
+        },
+        {
+            balance: '2502.43',
+            age: 25,
+            name: {
+                first: 'Delores',
+                last: 'Sykes'
+            },
+            company: 'ASSITIA',
+            email: 'delores.sykes@assitia.com',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Amy Fox'
+                },
+                {
+                    id: 1,
+                    name: 'Laurel Gaines'
+                },
+                {
+                    id: 2,
+                    name: 'Mcguire French'
+                },
+                {
+                    id: 3,
+                    name: 'Savage Rocha'
+                },
+                {
+                    id: 4,
+                    name: 'Durham Fowler'
+                },
+                {
+                    id: 5,
+                    name: 'Jacobson Clay'
+                },
+                {
+                    id: 6,
+                    name: 'Hamilton Pierce'
+                },
+                {
+                    id: 7,
+                    name: 'Johns Jefferson'
+                },
+                {
+                    id: 8,
+                    name: 'Avery Campbell'
+                }
+            ],
+            favoriteFruit: 'strawberry'
+        },
+        {
+            balance: '3651.54',
+            age: 21,
+            name: {
+                first: 'Ryan',
+                last: 'Bolton'
+            },
+            company: 'MOLTONIC',
+            email: 'ryan.bolton@moltonic.biz',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Weaver Buchanan'
+                },
+                {
+                    id: 1,
+                    name: 'Francesca Rice'
+                },
+                {
+                    id: 2,
+                    name: 'Sheppard Calhoun'
+                },
+                {
+                    id: 3,
+                    name: 'Schmidt Murray'
+                }
+            ],
+            favoriteFruit: 'apple'
+        },
+        {
+            balance: '1345.79',
+            age: 21,
+            name: {
+                first: 'Carey',
+                last: 'Schwartz'
+            },
+            company: 'UXMOX',
+            email: 'carey.schwartz@uxmox.info',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Lilia Wiggins'
+                },
+                {
+                    id: 1,
+                    name: 'Snider Tanner'
+                },
+                {
+                    id: 2,
+                    name: 'Taylor Perez'
+                },
+                {
+                    id: 3,
+                    name: 'Raquel Castaneda'
+                },
+                {
+                    id: 4,
+                    name: 'Burris Mcmahon'
+                },
+                {
+                    id: 5,
+                    name: 'Henderson Osborn'
+                },
+                {
+                    id: 6,
+                    name: 'Carrillo Ortiz'
+                },
+                {
+                    id: 7,
+                    name: 'Herminia Puckett'
+                },
+                {
+                    id: 8,
+                    name: 'Shelby Ware'
+                }
+            ],
+            favoriteFruit: 'banana'
+        },
+        {
+            balance: '3261.11',
+            age: 30,
+            name: {
+                first: 'Trevino',
+                last: 'Mullins'
+            },
+            company: 'TERRASYS',
+            email: 'trevino.mullins@terrasys.org',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Corine Deleon'
+                },
+                {
+                    id: 1,
+                    name: 'Alta Walker'
+                },
+                {
+                    id: 2,
+                    name: 'Jeannie Santana'
+                },
+                {
+                    id: 3,
+                    name: 'Velazquez Oneill'
+                },
+                {
+                    id: 4,
+                    name: 'Perry Merrill'
+                },
+                {
+                    id: 5,
+                    name: 'Tabitha Mcintosh'
+                },
+                {
+                    id: 6,
+                    name: 'Shields Castillo'
+                }
+            ],
+            favoriteFruit: 'banana'
+        },
+        {
+            balance: '1659.17',
+            age: 20,
+            name: {
+                first: 'Gilliam',
+                last: 'Mendez'
+            },
+            company: 'ZENTHALL',
+            email: 'gilliam.mendez@zenthall.tv',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Nora Ratliff'
+                },
+                {
+                    id: 1,
+                    name: 'Simone Michael'
+                },
+                {
+                    id: 2,
+                    name: 'Lang Rose'
+                },
+                {
+                    id: 3,
+                    name: 'Priscilla Hester'
+                },
+                {
+                    id: 4,
+                    name: 'Stuart Barker'
+                },
+                {
+                    id: 5,
+                    name: 'Florine Mcintyre'
+                },
+                {
+                    id: 6,
+                    name: 'Karin Rosa'
+                },
+                {
+                    id: 7,
+                    name: 'Vinson Rutledge'
+                }
+            ],
+            favoriteFruit: 'strawberry'
+        },
+        {
+            balance: '2340.54',
+            age: 32,
+            name: {
+                first: 'Brewer',
+                last: 'Vargas'
+            },
+            company: 'QIMONK',
+            email: 'brewer.vargas@qimonk.co.uk',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Tamera Sharp'
+                },
+                {
+                    id: 1,
+                    name: 'Jackie Parks'
+                },
+                {
+                    id: 2,
+                    name: 'Wanda Merritt'
+                },
+                {
+                    id: 3,
+                    name: 'Castillo Sloan'
+                }
+            ],
+            favoriteFruit: 'apple'
+        },
+        {
+            balance: '1736.91',
+            age: 24,
+            name: {
+                first: 'Newman',
+                last: 'Wynn'
+            },
+            company: 'VISALIA',
+            email: 'newman.wynn@visalia.name',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Lopez Mccarthy'
+                },
+                {
+                    id: 1,
+                    name: 'Melinda Diaz'
+                },
+                {
+                    id: 2,
+                    name: 'Silva Shepherd'
+                },
+                {
+                    id: 3,
+                    name: 'Claudia Contreras'
+                },
+                {
+                    id: 4,
+                    name: 'Jenna Golden'
+                },
+                {
+                    id: 5,
+                    name: 'Blair Hayden'
+                },
+                {
+                    id: 6,
+                    name: 'Antonia Woods'
+                },
+                {
+                    id: 7,
+                    name: 'Felecia Greer'
+                },
+                {
+                    id: 8,
+                    name: 'Sherry Howard'
+                },
+                {
+                    id: 9,
+                    name: 'Montgomery Cohen'
+                }
+            ],
+            favoriteFruit: 'apple'
+        }
+    ];
+
+    function showAllEmails() {
+        // console.log("Электронные адреса пользователей:")
+        // users.forEach(user => console.log(user.email));
+        users.forEach(user => document.querySelector('#emailAddressesOutput').innerHTML += user.email + '</br>');
+    }
+
+    function showHigestFriendCount() {
+        // console.log("Пользователи с наибольшим количеством друзей");
+
+        let max = Number.MIN_VALUE;
+
+        users.forEach(user => {
+            if (max < user.friends.length)
+                max = user.friends.length;
+        });
+
+        users
+            .filter(user => user.friends.length == max)
+            // .forEach(user => console.log(user.name.first + " " + user.name.last));
+            .forEach(user => document.querySelector('#greatesFriendsCountOutput').innerHTML += user.name.first + " " + user.name.last + '</br>');
+    }
+
+    function showMinMaxBalance() {
+        let minBalance = Number.MAX_VALUE;
+        let maxBalance = Number.MIN_VALUE;
+
+        users.forEach(user => {
+            const currentBalance = +user.balance;
+            if (currentBalance > maxBalance)
+                maxBalance = currentBalance;
+            else if (currentBalance < minBalance) {
+                minBalance = currentBalance;
+            }
+        });
+
+        // console.log("Компании пользователей с наибольшим балансом:")
+        users
+            .filter(user => +user.balance === maxBalance)
+            // .forEach(user => console.log(user.company));
+            .forEach(user => document.querySelector('#greatestBalanceCompanyOutput').innerHTML += user.company + '</br>');
+
+        // console.log("Компании пользователей с наименьшим балансом:")
+        users
+            .filter(user => +user.balance === minBalance)
+            // .forEach(user => console.log(user.company));
+            .forEach(user => document.querySelector('#lowestBalanceCompanyOutput').innerHTML += user.company + '</br>')
+    }
+
+    showAllEmails();
+    showHigestFriendCount();
+    showMinMaxBalance();
+</script>
+
+</body>-->
+
+<!--DOM three modification-->
+
+<!--Task 1-->
+<!--<body>
+
+&lt;!&ndash;
+/*
+Задание:
+Создайте параграфы под каждый элемент массива days, значения элементов массива должны быть добавлены как текст в параграфе.
+Разместите все созданные параграфы в div с id output
+*/
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+&ndash;&gt;
+
+<script>
+
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+    function createWeekCard() {
+        let div = document.createElement('div');
+        div.setAttribute("id", "output");
+
+        document.body.prepend(div);
+
+        for (const day of days) {
+            div.insertAdjacentHTML('beforeend', `<p>${day}</p>`);
+        }
+    }
+
+    createWeekCard();
+
+</script>
+</body>-->
+<!--Task 2-->
+<!--<body>
+Рабочие дни
+<div></div>
+
+Выходные дни
+<div></div>
+
+<script>
+    /*
+     Задание:
+     Используя параграфы, выведите все рабочие дни недели в div, который находится после фразы "Рабочие дни",
+     выведите все выходные дни недели после фразы "Выходные дни".
+     Можно внести в разметку соответствующие изменения, чтобы упростить задачу поиска необходимых div.
+     Параграфы создавайте с помощью перебора массива days. В параграф помещайте значение свойства name.
+     */
+
+    let days = [{name: "Sunday", isWorkDay: false},
+        {name: "Monday", isWorkDay: true},
+        {name: "Tuesday", isWorkDay: true},
+        {name: "Wednesday", isWorkDay: true},
+        {name: "Thursday", isWorkDay: true},
+        {name: "Friday", isWorkDay: true},
+        {name: "Saturday", isWorkDay: false}];
+
+    function createWeekDay() {
+
+        let divWorkDays = document.querySelector('body div:nth-child(1)');
+        divWorkDays.setAttribute('id', 'workDays');
+        let divFreeDays = document.querySelector('body div:nth-child(2)');
+        divFreeDays.setAttribute('id', 'freeDays');
+
+        for (const day of days) {
+
+            if (day.isWorkDay) {
+                divWorkDays.insertAdjacentHTML('beforeend', `<p><b>${day.name}</b></p>`);
+            } else {
+                divFreeDays.insertAdjacentHTML('beforeend', `<p><b>${day.name}</b></p>`);
+            }
+        }
+    }
+
+    createWeekDay();
+
+</script>
+
+</body>-->
+<!--Task 3-->
+<!--<body>
+<table id="statsTable">
+    <tbody>
+    <tr>
+        <td>Январь</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>Февраль</td>
+        <td>140</td>
+    </tr>
+    <tr>
+        <td>Март</td>
+        <td>115</td>
+    </tr>
+    <tr>
+        <td>Апрель</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>Март</td>
+        <td>80</td>
+    </tr>
+    <tr>
+        <td>Июнь</td>
+        <td>90</td>
+    </tr>
+    <tr>
+        <td>Июль</td>
+        <td>100</td>
+    </tr>
+    </tbody>
+</table>
+
+<script>
+    /*
+    Задание:
+    Напишите сценарий, который удалит строки таблицы, в которых во второй колонке находятся значения меньше 100.
+    (В прошлом уроке были рассмотрены примеры, показывающие как получить доступ к родительским элементам, так как
+    удалять нужно не ячейку td, в которой находится значение, а строку tr, в которой расположена эта ячейка).
+    */
+
+    function deleteValueLessThen100() {
+        let secondTdOfTable = document.querySelectorAll('#statsTable td:nth-child(2)');
+
+        for (const td of secondTdOfTable) {
+            if (td.textContent < 100) td.parentElement.remove();
+        }
+    }
+
+    deleteValueLessThen100();
+</script>
+
+</body>-->
+<!--Task 4-->
+<!--<body>
+<script>
+    /*
+    Задание:
+    Создайте таблицу (table, tr, td) на основе массива объектов с именем source. Каждый объект - отдельная строка таблицы. Свойство month - значение для первой колонок.
+    Свойство amont - значение для второй колонки.
+    */
+
+    let source = [
+        {
+            month: "Январь",
+            amount: 20
+        },
+        {
+            month: "Февраль",
+            amount: 140
+        },
+        {
+            month: "Март",
+            amount: 115
+        },
+        {
+            month: "Апрель",
+            amount: 100
+        },
+        {
+            month: "Март",
+            amount: 80
+        },
+        {
+            month: "Июнь",
+            amount: 90
+        },
+        {
+            month: "Июль",
+            amount: 100
+        }
+    ];
+
+    function createTableFromSource(arr) {
+        let table = document.createElement('table');
+
+        for (let elem of arr) {
+            let tr = table.insertRow(0);
+            tr.insertCell(0).innerHTML = `${elem.month}`;
+            tr.insertCell(1).innerHTML = `${elem.amount}`;
+        }
+        document.body.prepend(table);
+    }
+
+    createTableFromSource(source);
+
+</script>
+
+</body>-->
+<!--Task 5-->
+<!--<body>
+
+<script>
+
+    /*
+    Задание:
+    Внесите правки в данный код.
+    Карточка пользователя, у которого менее 5 друзей (значение размера массива friends в объектах массива users), должна отображаться с красной рамкой толщиной в 2px.
+    */
+
+    let users = [
+        {
+            balance: '1250.89',
+            age: 24,
+            name: {
+                first: 'Golden',
+                last: 'Clements'
+            },
+            company: 'EWAVES',
+            email: 'golden.clements@ewaves.io',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Buchanan Austin'
+                },
+                {
+                    id: 1,
+                    name: 'Richmond Garrison'
+                },
+                {
+                    id: 2,
+                    name: 'Burns Cook'
+                },
+                {
+                    id: 3,
+                    name: 'Sally Mcpherson'
+                },
+                {
+                    id: 4,
+                    name: 'Nina Hood'
+                },
+                {
+                    id: 5,
+                    name: 'Rhonda Anderson'
+                },
+                {
+                    id: 6,
+                    name: 'Mathis Bowen'
+                },
+                {
+                    id: 7,
+                    name: 'Janie Carlson'
+                },
+                {
+                    id: 8,
+                    name: 'Brooke Reilly'
+                },
+                {
+                    id: 9,
+                    name: 'Peters Oliver'
+                }
+            ],
+            favoriteFruit: 'strawberry'
+        },
+        {
+            balance: '3637.94',
+            age: 23,
+            name: {
+                first: 'Francis',
+                last: 'Hebert'
+            },
+            company: 'XPLOR',
+            email: 'francis.hebert@xplor.biz',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Clements Glass'
+                },
+                {
+                    id: 1,
+                    name: 'Gutierrez Padilla'
+                },
+                {
+                    id: 2,
+                    name: 'Noelle Wilkinson'
+                },
+                {
+                    id: 3,
+                    name: 'Kim Sampson'
+                },
+                {
+                    id: 4,
+                    name: 'Luz Palmer'
+                }
+            ],
+            favoriteFruit: 'apple'
+        },
+        {
+            balance: '1106.44',
+            age: 31,
+            name: {
+                first: 'Hale',
+                last: 'Cross'
+            },
+            company: 'EARTHPURE',
+            email: 'hale.cross@earthpure.us',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Terri Clark'
+                },
+                {
+                    id: 1,
+                    name: 'Marie Joyce'
+                },
+                {
+                    id: 2,
+                    name: 'Howell Moses'
+                },
+                {
+                    id: 3,
+                    name: 'Juarez Marshall'
+                },
+                {
+                    id: 4,
+                    name: 'Corinne Grant'
+                },
+                {
+                    id: 5,
+                    name: 'Chandra Ferrell'
+                },
+                {
+                    id: 6,
+                    name: 'Emily Kidd'
+                },
+                {
+                    id: 7,
+                    name: 'Claudine Pollard'
+                },
+                {
+                    id: 8,
+                    name: 'Walter Cooper'
+                },
+                {
+                    id: 9,
+                    name: 'Isabella Hays'
+                }
+            ],
+            favoriteFruit: 'strawberry'
+        },
+        {
+            balance: '2502.43',
+            age: 25,
+            name: {
+                first: 'Delores',
+                last: 'Sykes'
+            },
+            company: 'ASSITIA',
+            email: 'delores.sykes@assitia.com',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Amy Fox'
+                },
+                {
+                    id: 1,
+                    name: 'Laurel Gaines'
+                },
+                {
+                    id: 2,
+                    name: 'Mcguire French'
+                },
+                {
+                    id: 3,
+                    name: 'Savage Rocha'
+                },
+                {
+                    id: 4,
+                    name: 'Durham Fowler'
+                },
+                {
+                    id: 5,
+                    name: 'Jacobson Clay'
+                },
+                {
+                    id: 6,
+                    name: 'Hamilton Pierce'
+                },
+                {
+                    id: 7,
+                    name: 'Johns Jefferson'
+                },
+                {
+                    id: 8,
+                    name: 'Avery Campbell'
+                }
+            ],
+            favoriteFruit: 'strawberry'
+        },
+        {
+            balance: '3651.54',
+            age: 21,
+            name: {
+                first: 'Ryan',
+                last: 'Bolton'
+            },
+            company: 'MOLTONIC',
+            email: 'ryan.bolton@moltonic.biz',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Weaver Buchanan'
+                },
+                {
+                    id: 1,
+                    name: 'Francesca Rice'
+                },
+                {
+                    id: 2,
+                    name: 'Sheppard Calhoun'
+                },
+                {
+                    id: 3,
+                    name: 'Schmidt Murray'
+                }
+            ],
+            favoriteFruit: 'apple'
+        },
+        {
+            balance: '1345.79',
+            age: 21,
+            name: {
+                first: 'Carey',
+                last: 'Schwartz'
+            },
+            company: 'UXMOX',
+            email: 'carey.schwartz@uxmox.info',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Lilia Wiggins'
+                },
+                {
+                    id: 1,
+                    name: 'Snider Tanner'
+                },
+                {
+                    id: 2,
+                    name: 'Taylor Perez'
+                },
+                {
+                    id: 3,
+                    name: 'Raquel Castaneda'
+                },
+                {
+                    id: 4,
+                    name: 'Burris Mcmahon'
+                },
+                {
+                    id: 5,
+                    name: 'Henderson Osborn'
+                },
+                {
+                    id: 6,
+                    name: 'Carrillo Ortiz'
+                },
+                {
+                    id: 7,
+                    name: 'Herminia Puckett'
+                },
+                {
+                    id: 8,
+                    name: 'Shelby Ware'
+                }
+            ],
+            favoriteFruit: 'banana'
+        },
+        {
+            balance: '3261.11',
+            age: 30,
+            name: {
+                first: 'Trevino',
+                last: 'Mullins'
+            },
+            company: 'TERRASYS',
+            email: 'trevino.mullins@terrasys.org',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Corine Deleon'
+                },
+                {
+                    id: 1,
+                    name: 'Alta Walker'
+                },
+                {
+                    id: 2,
+                    name: 'Jeannie Santana'
+                },
+                {
+                    id: 3,
+                    name: 'Velazquez Oneill'
+                },
+                {
+                    id: 4,
+                    name: 'Perry Merrill'
+                },
+                {
+                    id: 5,
+                    name: 'Tabitha Mcintosh'
+                },
+                {
+                    id: 6,
+                    name: 'Shields Castillo'
+                }
+            ],
+            favoriteFruit: 'banana'
+        },
+        {
+            balance: '1659.17',
+            age: 20,
+            name: {
+                first: 'Gilliam',
+                last: 'Mendez'
+            },
+            company: 'ZENTHALL',
+            email: 'gilliam.mendez@zenthall.tv',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Nora Ratliff'
+                },
+                {
+                    id: 1,
+                    name: 'Simone Michael'
+                },
+                {
+                    id: 2,
+                    name: 'Lang Rose'
+                },
+                {
+                    id: 3,
+                    name: 'Priscilla Hester'
+                },
+                {
+                    id: 4,
+                    name: 'Stuart Barker'
+                },
+                {
+                    id: 5,
+                    name: 'Florine Mcintyre'
+                },
+                {
+                    id: 6,
+                    name: 'Karin Rosa'
+                },
+                {
+                    id: 7,
+                    name: 'Vinson Rutledge'
+                }
+            ],
+            favoriteFruit: 'strawberry'
+        },
+        {
+            balance: '2340.54',
+            age: 32,
+            name: {
+                first: 'Brewer',
+                last: 'Vargas'
+            },
+            company: 'QIMONK',
+            email: 'brewer.vargas@qimonk.co.uk',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Tamera Sharp'
+                },
+                {
+                    id: 1,
+                    name: 'Jackie Parks'
+                },
+                {
+                    id: 2,
+                    name: 'Wanda Merritt'
+                },
+                {
+                    id: 3,
+                    name: 'Castillo Sloan'
+                }
+            ],
+            favoriteFruit: 'apple'
+        },
+        {
+            balance: '1736.91',
+            age: 24,
+            name: {
+                first: 'Newman',
+                last: 'Wynn'
+            },
+            company: 'VISALIA',
+            email: 'newman.wynn@visalia.name',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Lopez Mccarthy'
+                },
+                {
+                    id: 1,
+                    name: 'Melinda Diaz'
+                },
+                {
+                    id: 2,
+                    name: 'Silva Shepherd'
+                },
+                {
+                    id: 3,
+                    name: 'Claudia Contreras'
+                },
+                {
+                    id: 4,
+                    name: 'Jenna Golden'
+                },
+                {
+                    id: 5,
+                    name: 'Blair Hayden'
+                },
+                {
+                    id: 6,
+                    name: 'Antonia Woods'
+                },
+                {
+                    id: 7,
+                    name: 'Felecia Greer'
+                },
+                {
+                    id: 8,
+                    name: 'Sherry Howard'
+                },
+                {
+                    id: 9,
+                    name: 'Montgomery Cohen'
+                }
+            ],
+            favoriteFruit: 'apple'
+        }
+    ];
+
+    function createUserCard(user) {
+        let div = document.createElement("div");
+        div.classList.add("user-card");
+        div.insertAdjacentHTML("beforeend", `<h2>${user.name.first} ${user.name.last}</h2>`);
+        div.insertAdjacentHTML("beforeend", `<p>email: ${user.email}</p>`);
+        div.insertAdjacentHTML("beforeend", `<p>company: ${user.company}</p>`);
+        div.insertAdjacentHTML("beforeend", `<br />friends:`);
+
+        let ul = document.createElement("ul");
+        for (const friend of user.friends) {
+            ul.insertAdjacentHTML("beforeend", `<li>${friend.name}</li>`);
+
+            if (user.friends.length < 5) {
+                div.style.border = '2px solid red'
+            }
+        }
+
+        div.append(ul);
+        return div;
+    }
+
+    users.forEach(user => {
+        let card = createUserCard(user);
+        document.body.append(card);
+    });
+</script>
+
+</body>-->
+
+<!--Prop and attributes-->
+
+<!--Task 1-->
+<!--<body>
+<div data-color="red">Div 1</div>
+<div data-color="green">Div 2</div>
+<div data-color="blue">Div 3</div>
+
+<script>
+    /*
+    Задание:
+    Напишите сценарий, который поменяет цвет текста элементов div, на тот, который указан в качестве значения атрибута data-color
+    */
+    let findDiv = document.querySelectorAll('[data-color]');
+
+    function addColor(div) {
+
+        for(const elem of div) {
+            elem.style.color = `${elem.dataset.color}`;
+        }
+    }
+
+    addColor(findDiv);
+</script>
+
+</body>-->
+<!--Task 2-->
+<!--<body>
+
+<div data-value="10">
+    <p my-attribute="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eum neque minus et officia
+        sequi, velit tempora consequatur mollitia ducimus consequuntur error amet reprehenderit id distinctio laborum
+        est architecto repellat!</p>
+    <p data-value="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, ab. Voluptas temporibus quam
+        quibusdam odio doloribus corrupti assumenda rem rerum, iusto natus animi accusamus dolore. Quas architecto
+        libero cum modi.</p>
+    <p my-attribute="37">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus officiis natus itaque
+        error saepe, alias harum porro nemo sint? Provident, optio. Aliquid fuga qui assumenda iusto, nihil id obcaecati
+        est?</p>
+    <a my-attribute="7" href="https://itvdn.com">ITVDN</a>
+    <span data-value="9">Hello world</span>
+</div>
+
+<script>
+    /*
+    Задание:
+    Посчитайте сумму значений атрибутов data-value и my-attribute всех элементов на текущей странице и отобразите ее пользователю.
+    */
+
+    let allAttr = document.querySelectorAll('[data-value], [my-attribute]');
+
+    let sum = 0;
+
+    for (let attr of allAttr) {
+        sum += Number(attr.getAttribute('data-value'));
+        sum += Number(attr.getAttribute('my-attribute'));
+    }
+
+    alert(sum);
+
+</script>
+
+</body>-->
+<!--Task 3-->
+<!--<body>
+<div>Div 1</div>
+<div data-remove="">Div 2</div>
+<div>Div 3</div>
+<div data-remove="">Div 4</div>
+
+<script>
+    /*
+    Задание:
+    Напишите сценарий, который удалит на странице элементы с атрибутом data-remove
+    */
+
+    let findRemoveAttr = document.querySelectorAll('[data-remove]');
+
+    findRemoveAttr.forEach(attr => attr.remove());
+
+</script>
+
+</body>-->
+<!--Task 4-->
+<!--<body>
+<div class="task" data-status="completed">
+    Купить молоко
+</div>
+
+<div class="task" data-status="expired">
+    Выгулять собаку
+</div>
+
+<div class="task">
+    Выучить JavaScript
+</div>
+
+<div class="task">
+    Спасти мир
+</div>
+
+<script>
+    /*
+    Задание:
+    Для элементов с атрибутом data-status="expired" сделайте рамку красного цвета. Для элементов с атрибутом data-status="completed" выведите рамку зеленого цвета.
+    */
+
+    let findAttr = document.querySelectorAll('[data-status]');
+
+    for (let attr of findAttr) {
+        let getValueOfAttr = attr.getAttribute('data-status');
+        if (getValueOfAttr === 'completed') {
+            attr.style.border = '2px solid green';
+        } else {
+            attr.style.border = '2px solid red';
+        }
+    }
+
+</script>
+
+</body>-->
+<!--Task 5-->
+<!--<body>
+<div data-bind="firstName"></div>
+<div data-bind="lastName"></div>
+<div data-bind="age"></div>
+
+<script>
+    /*
+    Задание:
+    Напишите сценарий, который свойства объекта user выведет в элементы на странице, которые помечены атрибутами data-bind.
+    При этом значение атрибута это имя свойства, значение которого должно отобразится в элементе.
+    Например, в <div data-bind="firstName"></div> должно отобразится значение свойства firstName объекта user
+    Попробуйте написать универсальную функцию, которая сможет выводить любой объект с любыми свойствами в разметку в соответствующие элементы, помеченные атрибутом.
+    Для обхода свойств объекта, можно использовать цикл for in
+    */
+
+    let user = {
+        firstName: "Jhon",
+        lastName: "Doe",
+        age: "25",
+    }
+
+    function createValueForAttr(obg) {
+
+        for (let key in obg) {
+
+            let div = document.querySelector(`[data-bind="${key}"]`);
+            // div.append(key);
+            div.textContent = key;
+        }
+    }
+
+    createValueForAttr(user);
+
+</script>
+
+</body>-->
+
+<!--Styles-->
+<!--Task 1-->
+<!--<body>
+<div>
+    Логин или пароль введен неправильно
+</div>
+<script>
+    /*
+    Задание:
+    Напишите код, который добавит CSS класс error для элемента DIV, размещенного в текущем документе.
+    */
+
+    let divElement = document.querySelector('div');
+    divElement.className += 'error'
+</script>
+
+</body>-->
+<!--Task 2-->
+<!--<body>
+<div>
+    Логин или пароль введен неправильно
+</div>
+<script>
+    /*
+    Задание:
+    Не используя CSS классы, поменяйте с помощью JavaScript кода оформление элемента DIV, расположенного на текущей странице.
+
+    Добавьте:
+    >> шрифт - 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    >> сплошную рамку толщиной в 1 px красного цвета
+    >> внутренний отступ в 16px
+    >> скругление рамки в 8 px
+    */
+
+    let div = document.querySelector('div');
+    div.style.cssText = `
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid red;
+    padding: 16px;
+    border-radius: 8px;
+    `
+
+</script>
+
+</body>-->
+<!--Task 3-->
+<!--<body>
+<script>
+    /*
+    Задание:
+    Приложение создает для каждого дня недели div и поменяет какие дни недели являются занятыми.
+
+    Создайте div под каждый элемент массива days, значения элементов массива должны быть добавлены как текст в div. Если текст созданного div находится в массиве
+    busyDays добавьте для такого div дополнительно класс .busy-day
+    Разместите все созданные в конец тела документа.
+    */
+
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let busyDays = ["Monday", "Thursday", "Friday"];
+
+
+    function checkedBusyDay(week, iBusyDay){
+        for (let day of week) {
+            let div = document.createElement('div');
+            div.textContent = day;
+            document.body.append(div);
+
+            if (iBusyDay.includes(day)) div.classList.add('busy-day');
+        }
+    }
+
+    checkedBusyDay(days, busyDays);
+
+</script>
+
+</body>-->
+<!--Task 4-->
+<!--<body>
+<table id="statsTable">
+    <tbody>
+    <tr>
+        <td>Январь</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>Февраль</td>
+        <td>140</td>
+    </tr>
+    <tr>
+        <td>Март</td>
+        <td>115</td>
+    </tr>
+    <tr>
+        <td>Апрель</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>Март</td>
+        <td>80</td>
+    </tr>
+    <tr>
+        <td>Июнь</td>
+        <td>90</td>
+    </tr>
+    <tr>
+        <td>Июль</td>
+        <td>100</td>
+    </tr>
+    </tbody>
+</table>
+
+<script>
+    /*
+    Задание:
+    Напишите сценарий, который добавит класс attention строкам таблицы, в которых во второй колонке находятся значения меньше 100.
+    */
+
+    let secondTd = document.querySelectorAll('td:nth-child(2)');
+
+    for (let td of secondTd) {
+
+        if (td.textContent < 100) {
+            td.classList.add('attention')
+        }
+    }
+
+</script>
+
+</body>-->
+<!--Task 5-->
+<!--<body>
+
+<script>
+
+    /*
+    Задание:
+    Внесите правки в данный код.
+    Уберите использование inline стилей, замените их на работу с классами (недостающие классы добавьте).
+    */
+
+    let users = [
+        {
+            balance: '1250.89',
+            age: 24,
+            name: {
+                first: 'Golden',
+                last: 'Clements'
+            },
+            company: 'EWAVES',
+            email: 'golden.clements@ewaves.io',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Buchanan Austin'
+                },
+                {
+                    id: 1,
+                    name: 'Richmond Garrison'
+                },
+                {
+                    id: 2,
+                    name: 'Burns Cook'
+                },
+                {
+                    id: 3,
+                    name: 'Sally Mcpherson'
+                },
+                {
+                    id: 4,
+                    name: 'Nina Hood'
+                },
+                {
+                    id: 5,
+                    name: 'Rhonda Anderson'
+                },
+                {
+                    id: 6,
+                    name: 'Mathis Bowen'
+                },
+                {
+                    id: 7,
+                    name: 'Janie Carlson'
+                },
+                {
+                    id: 8,
+                    name: 'Brooke Reilly'
+                },
+                {
+                    id: 9,
+                    name: 'Peters Oliver'
+                }
+            ],
+            favoriteFruit: 'strawberry'
+        },
+        {
+            balance: '3637.94',
+            age: 23,
+            name: {
+                first: 'Francis',
+                last: 'Hebert'
+            },
+            company: 'XPLOR',
+            email: 'francis.hebert@xplor.biz',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Clements Glass'
+                },
+                {
+                    id: 1,
+                    name: 'Gutierrez Padilla'
+                },
+                {
+                    id: 2,
+                    name: 'Noelle Wilkinson'
+                },
+                {
+                    id: 3,
+                    name: 'Kim Sampson'
+                },
+                {
+                    id: 4,
+                    name: 'Luz Palmer'
+                }
+            ],
+            favoriteFruit: 'apple'
+        },
+        {
+            balance: '1106.44',
+            age: 31,
+            name: {
+                first: 'Hale',
+                last: 'Cross'
+            },
+            company: 'EARTHPURE',
+            email: 'hale.cross@earthpure.us',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Terri Clark'
+                },
+                {
+                    id: 1,
+                    name: 'Marie Joyce'
+                },
+                {
+                    id: 2,
+                    name: 'Howell Moses'
+                },
+                {
+                    id: 3,
+                    name: 'Juarez Marshall'
+                },
+                {
+                    id: 4,
+                    name: 'Corinne Grant'
+                },
+                {
+                    id: 5,
+                    name: 'Chandra Ferrell'
+                },
+                {
+                    id: 6,
+                    name: 'Emily Kidd'
+                },
+                {
+                    id: 7,
+                    name: 'Claudine Pollard'
+                },
+                {
+                    id: 8,
+                    name: 'Walter Cooper'
+                },
+                {
+                    id: 9,
+                    name: 'Isabella Hays'
+                }
+            ],
+            favoriteFruit: 'strawberry'
+        },
+        {
+            balance: '2502.43',
+            age: 25,
+            name: {
+                first: 'Delores',
+                last: 'Sykes'
+            },
+            company: 'ASSITIA',
+            email: 'delores.sykes@assitia.com',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Amy Fox'
+                },
+                {
+                    id: 1,
+                    name: 'Laurel Gaines'
+                },
+                {
+                    id: 2,
+                    name: 'Mcguire French'
+                },
+                {
+                    id: 3,
+                    name: 'Savage Rocha'
+                },
+                {
+                    id: 4,
+                    name: 'Durham Fowler'
+                },
+                {
+                    id: 5,
+                    name: 'Jacobson Clay'
+                },
+                {
+                    id: 6,
+                    name: 'Hamilton Pierce'
+                },
+                {
+                    id: 7,
+                    name: 'Johns Jefferson'
+                },
+                {
+                    id: 8,
+                    name: 'Avery Campbell'
+                }
+            ],
+            favoriteFruit: 'strawberry'
+        },
+        {
+            balance: '3651.54',
+            age: 21,
+            name: {
+                first: 'Ryan',
+                last: 'Bolton'
+            },
+            company: 'MOLTONIC',
+            email: 'ryan.bolton@moltonic.biz',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Weaver Buchanan'
+                },
+                {
+                    id: 1,
+                    name: 'Francesca Rice'
+                },
+                {
+                    id: 2,
+                    name: 'Sheppard Calhoun'
+                },
+                {
+                    id: 3,
+                    name: 'Schmidt Murray'
+                }
+            ],
+            favoriteFruit: 'apple'
+        },
+        {
+            balance: '1345.79',
+            age: 21,
+            name: {
+                first: 'Carey',
+                last: 'Schwartz'
+            },
+            company: 'UXMOX',
+            email: 'carey.schwartz@uxmox.info',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Lilia Wiggins'
+                },
+                {
+                    id: 1,
+                    name: 'Snider Tanner'
+                },
+                {
+                    id: 2,
+                    name: 'Taylor Perez'
+                },
+                {
+                    id: 3,
+                    name: 'Raquel Castaneda'
+                },
+                {
+                    id: 4,
+                    name: 'Burris Mcmahon'
+                },
+                {
+                    id: 5,
+                    name: 'Henderson Osborn'
+                },
+                {
+                    id: 6,
+                    name: 'Carrillo Ortiz'
+                },
+                {
+                    id: 7,
+                    name: 'Herminia Puckett'
+                },
+                {
+                    id: 8,
+                    name: 'Shelby Ware'
+                }
+            ],
+            favoriteFruit: 'banana'
+        },
+        {
+            balance: '3261.11',
+            age: 30,
+            name: {
+                first: 'Trevino',
+                last: 'Mullins'
+            },
+            company: 'TERRASYS',
+            email: 'trevino.mullins@terrasys.org',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Corine Deleon'
+                },
+                {
+                    id: 1,
+                    name: 'Alta Walker'
+                },
+                {
+                    id: 2,
+                    name: 'Jeannie Santana'
+                },
+                {
+                    id: 3,
+                    name: 'Velazquez Oneill'
+                },
+                {
+                    id: 4,
+                    name: 'Perry Merrill'
+                },
+                {
+                    id: 5,
+                    name: 'Tabitha Mcintosh'
+                },
+                {
+                    id: 6,
+                    name: 'Shields Castillo'
+                }
+            ],
+            favoriteFruit: 'banana'
+        },
+        {
+            balance: '1659.17',
+            age: 20,
+            name: {
+                first: 'Gilliam',
+                last: 'Mendez'
+            },
+            company: 'ZENTHALL',
+            email: 'gilliam.mendez@zenthall.tv',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Nora Ratliff'
+                },
+                {
+                    id: 1,
+                    name: 'Simone Michael'
+                },
+                {
+                    id: 2,
+                    name: 'Lang Rose'
+                },
+                {
+                    id: 3,
+                    name: 'Priscilla Hester'
+                },
+                {
+                    id: 4,
+                    name: 'Stuart Barker'
+                },
+                {
+                    id: 5,
+                    name: 'Florine Mcintyre'
+                },
+                {
+                    id: 6,
+                    name: 'Karin Rosa'
+                },
+                {
+                    id: 7,
+                    name: 'Vinson Rutledge'
+                }
+            ],
+            favoriteFruit: 'strawberry'
+        },
+        {
+            balance: '2340.54',
+            age: 32,
+            name: {
+                first: 'Brewer',
+                last: 'Vargas'
+            },
+            company: 'QIMONK',
+            email: 'brewer.vargas@qimonk.co.uk',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Tamera Sharp'
+                },
+                {
+                    id: 1,
+                    name: 'Jackie Parks'
+                },
+                {
+                    id: 2,
+                    name: 'Wanda Merritt'
+                },
+                {
+                    id: 3,
+                    name: 'Castillo Sloan'
+                }
+            ],
+            favoriteFruit: 'apple'
+        },
+        {
+            balance: '1736.91',
+            age: 24,
+            name: {
+                first: 'Newman',
+                last: 'Wynn'
+            },
+            company: 'VISALIA',
+            email: 'newman.wynn@visalia.name',
+            friends: [
+                {
+                    id: 0,
+                    name: 'Lopez Mccarthy'
+                },
+                {
+                    id: 1,
+                    name: 'Melinda Diaz'
+                },
+                {
+                    id: 2,
+                    name: 'Silva Shepherd'
+                },
+                {
+                    id: 3,
+                    name: 'Claudia Contreras'
+                },
+                {
+                    id: 4,
+                    name: 'Jenna Golden'
+                },
+                {
+                    id: 5,
+                    name: 'Blair Hayden'
+                },
+                {
+                    id: 6,
+                    name: 'Antonia Woods'
+                },
+                {
+                    id: 7,
+                    name: 'Felecia Greer'
+                },
+                {
+                    id: 8,
+                    name: 'Sherry Howard'
+                },
+                {
+                    id: 9,
+                    name: 'Montgomery Cohen'
+                }
+            ],
+            favoriteFruit: 'apple'
+        }
+    ];
+
+    function createUserCard(user) {
+        let div = document.createElement("div");
+        div.classList.add("user-card");
+        div.insertAdjacentHTML("beforeend", `<h2>${user.name.first} ${user.name.last}</h2>`);
+        div.insertAdjacentHTML("beforeend", `<p>email: ${user.email}</p>`);
+        div.insertAdjacentHTML("beforeend", `<p>company: ${user.company}</p>`);
+        div.insertAdjacentHTML("beforeend", `<br />friends:`);
+
+        let ul = document.createElement("ul");
+        for (const friend of user.friends) {
+            ul.insertAdjacentHTML("beforeend", `<li>${friend.name}</li>`);
+        }
+        if (user.friends.length < 5) {
+            div.classList.add('lessFriends');
+        }
+
+        div.append(ul);
+        return div;
+    }
+
+    users.forEach(user => {
+        let card = createUserCard(user);
+        document.body.append(card);
+    });
+</script><div class="user-card"><h2>Golden Clements</h2><p>email: golden.clements@ewaves.io</p><p>company: EWAVES</p><br>friends:<ul><li>Buchanan Austin</li><li>Richmond Garrison</li><li>Burns Cook</li><li>Sally Mcpherson</li><li>Nina Hood</li><li>Rhonda Anderson</li><li>Mathis Bowen</li><li>Janie Carlson</li><li>Brooke Reilly</li><li>Peters Oliver</li></ul></div><div class="user-card"><h2>Francis Hebert</h2><p>email: francis.hebert@xplor.biz</p><p>company: XPLOR</p><br>friends:<ul><li>Clements Glass</li><li>Gutierrez Padilla</li><li>Noelle Wilkinson</li><li>Kim Sampson</li><li>Luz Palmer</li></ul></div><div class="user-card"><h2>Hale Cross</h2><p>email: hale.cross@earthpure.us</p><p>company: EARTHPURE</p><br>friends:<ul><li>Terri Clark</li><li>Marie Joyce</li><li>Howell Moses</li><li>Juarez Marshall</li><li>Corinne Grant</li><li>Chandra Ferrell</li><li>Emily Kidd</li><li>Claudine Pollard</li><li>Walter Cooper</li><li>Isabella Hays</li></ul></div><div class="user-card"><h2>Delores Sykes</h2><p>email: delores.sykes@assitia.com</p><p>company: ASSITIA</p><br>friends:<ul><li>Amy Fox</li><li>Laurel Gaines</li><li>Mcguire French</li><li>Savage Rocha</li><li>Durham Fowler</li><li>Jacobson Clay</li><li>Hamilton Pierce</li><li>Johns Jefferson</li><li>Avery Campbell</li></ul></div><div class="user-card" style="border: 2px solid red;"><h2>Ryan Bolton</h2><p>email: ryan.bolton@moltonic.biz</p><p>company: MOLTONIC</p><br>friends:<ul><li>Weaver Buchanan</li><li>Francesca Rice</li><li>Sheppard Calhoun</li><li>Schmidt Murray</li></ul></div><div class="user-card"><h2>Carey Schwartz</h2><p>email: carey.schwartz@uxmox.info</p><p>company: UXMOX</p><br>friends:<ul><li>Lilia Wiggins</li><li>Snider Tanner</li><li>Taylor Perez</li><li>Raquel Castaneda</li><li>Burris Mcmahon</li><li>Henderson Osborn</li><li>Carrillo Ortiz</li><li>Herminia Puckett</li><li>Shelby Ware</li></ul></div><div class="user-card"><h2>Trevino Mullins</h2><p>email: trevino.mullins@terrasys.org</p><p>company: TERRASYS</p><br>friends:<ul><li>Corine Deleon</li><li>Alta Walker</li><li>Jeannie Santana</li><li>Velazquez Oneill</li><li>Perry Merrill</li><li>Tabitha Mcintosh</li><li>Shields Castillo</li></ul></div><div class="user-card"><h2>Gilliam Mendez</h2><p>email: gilliam.mendez@zenthall.tv</p><p>company: ZENTHALL</p><br>friends:<ul><li>Nora Ratliff</li><li>Simone Michael</li><li>Lang Rose</li><li>Priscilla Hester</li><li>Stuart Barker</li><li>Florine Mcintyre</li><li>Karin Rosa</li><li>Vinson Rutledge</li></ul></div><div class="user-card" style="border: 2px solid red;"><h2>Brewer Vargas</h2><p>email: brewer.vargas@qimonk.co.uk</p><p>company: QIMONK</p><br>friends:<ul><li>Tamera Sharp</li><li>Jackie Parks</li><li>Wanda Merritt</li><li>Castillo Sloan</li></ul></div><div class="user-card"><h2>Newman Wynn</h2><p>email: newman.wynn@visalia.name</p><p>company: VISALIA</p><br>friends:<ul><li>Lopez Mccarthy</li><li>Melinda Diaz</li><li>Silva Shepherd</li><li>Claudia Contreras</li><li>Jenna Golden</li><li>Blair Hayden</li><li>Antonia Woods</li><li>Felecia Greer</li><li>Sherry Howard</li><li>Montgomery Cohen</li></ul></div>
+
+</body>-->
+
+<!--Events part 1-->
+
+<!--Task 1-->
+<!--<body>
+<button id="testBtn">Test Button</button>
+<script>
+    /*
+    Задание:
+    Добавьте для кнопки testBtn обработчик на событие click.
+    Обработчик должен выводить на экран сообщение Hello world.
+    Добавьте обработчик тремя разными способами.
+    */
+
+   let button = document.querySelector('#testBtn');
+   button.addEventListener('click', () => {alert('Hello word')});
+
+</script>
+
+</body>-->
+<!--Task 2-->
+<!--<body>
+<script>
+    /*
+    Задание:
+    Напишите сценарий, который вычисляет объем цилиндра по параметрам, которые вводит пользователь.
+    Для расчета используйте формулу - V=π * r в квадрате * h
+    Разместите на странице два поля ввода - первое для радиуса цилиндра, второе для высоты цилиндра.
+    Объем цилиндра выведите в тело страницы.
+    */
+
+    let div = document.createElement('div');
+    let inputH = document.createElement('input');
+    let inputR = document.createElement('input');
+    let button = document.createElement('button');
+    let pForLable = document.createElement('p');
+    let pForSolution = document.createElement('p');
+
+    document.body.append(div);
+    div.append(pForLable);
+    div.append(inputH);
+    div.append(inputR);
+    div.append(button);
+    div.append(pForSolution);
+
+    inputH.setAttribute('placeholder', 'Высота');
+    inputR.setAttribute('placeholder', 'Радиус');
+
+    pForLable.textContent = 'Рассчет обьема цилинра по параметрам:'
+    button.textContent = 'Рассчитать';
+
+    button.addEventListener('click', function() {
+        let h = +inputH.value;
+        let r = +inputR.value;
+        pForSolution.textContent = Math.PI * (r ** 2) * h;
+    })
+
+</script>
+
+</body>-->
+<!--Task 3-->
+<!--<body>
+Операнд 1: <input id="input1" type="text"> <br>
+<span id="input1Error" class="error">Введите значение</span> <br>
+
+Операнд 2: <input id="input2" type="text"> <br>
+<span id="input2Error" class="error">Введите значение</span> <br>
+
+<button id="add-btn">+</button>
+<button id="rem-btn">-</button>
+<button id="mul-btn">*</button>
+<button id="div-btn">/</button>
+<button id="reset-btn">reset</button>
+
+<script>
+    /*
+    Задание:
+    Внесите правки в данный сценарий.
+    Добавьте обработчик на клик по кнопке reset. При клике значения, введённые в поля ввода "Операнд 1"
+    и "Операнд 2", должны быть заменены на значения 0
+    Добавьте проверку перед выполнением любой арифметической операции. Если поле ввода пустое, сделайте
+    для этого поля ввода красную рамку и сделайте видимый элемент с ошибкой под этим полем ввода.
+    Для поля ввода input1 при отсутствии значения сделайте видимым span #input1Error для поля ввода
+    input2 сделайте, в случае ошибки, #input2Error видимым.
+    */
+    let input1 = document.querySelector("#input1");
+    let input2 = document.querySelector("#input2");
+
+    let addBtn = document.querySelector("#add-btn");
+    let remBtn = document.querySelector("#rem-btn");
+    let mulBtn = document.querySelector("#mul-btn");
+    let divBtn = document.querySelector("#div-btn");
+    let resetBtn = document.querySelector('#reset-btn');
+
+
+    addBtn.addEventListener("click", function () {
+        resetErrors();
+
+        if (validate()) {
+            alert(Number(input1.value) + Number(input2.value));
+        }
+    });
+
+    remBtn.addEventListener("click", function () {
+        resetErrors();
+
+        if (validate()) {
+            alert(input1.value - input2.value);
+        }
+    });
+
+    mulBtn.addEventListener("click", function () {
+        resetErrors();
+
+        if (validate()) {
+            alert(input1.value * input2.value);
+        }
+    });
+
+    divBtn.addEventListener("click", function () {
+        resetErrors();
+
+        if (validate()) {
+            alert(input1.value / input2.value);
+
+        }
+    })
+    ;
+
+    // сброс значений в полях ввода
+    resetBtn.addEventListener("click", function () {
+        input1.value = input2.value = 0;
+    });
+
+    function validate() {
+        let valid = true;
+
+        if (!input1.value) {
+            showError(input1)
+            valid = false;
+        }
+        if (!input2.value) {
+            showError(input2)
+            valid = false
+        }
+
+        return valid;
+    }
+
+    function showError(e) {
+        e.classList.add('error-border')
+
+        let inputSpan = e.id + 'Error';
+        document.querySelector('#' + inputSpan).style.display = 'block';
+
+    }
+
+    // функция для скрытя всех ошибок и удаления стилей связанных с ошибками
+    function resetErrors() {
+        let errorsSpans = document.querySelectorAll(".error");
+        errorsSpans.forEach(span => {
+            span.style.display = "none";
+        });
+
+        let inputs = document.querySelectorAll("input");
+        inputs.forEach(input => {
+            input.classList.remove("error-border");
+        });
+    }
+
+</script>
+
+</body>-->
+<!--Task 4-->
+<!--<body>
+<ul id="list">
+    <li>Груша</li>
+    <li>Мандарин</li>
+    <li>Ананас</li>
+    <li>Слива</li>
+    <li>Яблоко</li>
+    <li>Апельсин</li>
+</ul>
+
+<script>
+    /*
+    Задание:
+    Перепишите сценарий. Сделайте так, чтобы сортировка элементов в #list происходила при нажатии
+    на кнопку (кнопку нужно добавить), а не при загрузке страницы
+    */
+    let btn = document.createElement('button');
+    btn.textContent = 'Click';
+
+    let list = document.querySelector("#list");
+
+    list.after(btn);
+
+    let items = document.querySelectorAll("li"); // получаем объект NodeList (это не массив)
+    let itemsArray = Array.from(items); // на основе NodeList создаем массив
+
+    // выполняем сортировку с помощью стандартного метода массива
+    // так как сортируются узлы DOM нужно определить критерии, по которым узлы будут сравниваться
+    // функция, указанная в параметре метода sort определяет логику сравнения двух элементов в массиве. Она должна возвращать значение:
+    // если a < b возвращать значение меньше 0
+    // если a > b возвращать значение больше 0
+    // если a == b возвращать 0
+
+    btn.addEventListener('click', function () {
+        itemsArray.sort(function (a, b) {
+            if (a.textContent < b.textContent)
+                return -1;
+            if (a.textContent > b.textContent)
+                return 1;
+            return 0;
+        });
+
+        // добавление элементов в алфавитном порядке
+        // так как элементы уже есть в DOM дереве, то при добавлении элемент удаляется со своей предыдущей позиции
+        itemsArray.forEach(item => {
+            list.append(item);
+        });
+    });
+
+</script>
+
+
+</body>-->
+<!--Task 5-->
+<!--<body>
+<div class="input-panel">
+    <input type="text" id="task-name-input">
+    <button id="add-task-btn">Добавить задачу</button>
+</div>
+
+<div class="task-list">
+    <p id="start-message">Нет новых задач</p>
+</div>
+
+<script>
+    /*
+    Задание:
+    Сделайте так, чтобы в каждой созданной задаче, после текста задачи создавалась кнопка "Удалить".
+    При нажатии на которую вся задача удалялась из списка задач.
+    */
+    let taskNameInput = document.querySelector("#task-name-input");
+    let addTaskButton = document.querySelector("#add-task-btn");
+    let startMessage = document.querySelector("#start-message");
+    let taskList = document.querySelector(".task-list");
+
+    addTaskButton.addEventListener("click", addTaskHandler);
+
+    function createTask(text) {
+        let div = document.createElement("div");
+        div.classList.add("task");
+
+        let input = document.createElement("input");
+        input.addEventListener("click", changeTaskState);
+        input.type = "checkbox";
+
+        let p = document.createElement("p");
+        p.innerText = text;
+
+        let btn = document.createElement('button');
+        btn.innerHTML = 'delete';
+        btn.style.marginLeft = 'auto';
+
+        btn.addEventListener('click', function () {
+                this.parentElement.remove();
+            }
+        )
+
+        div.append(input);
+        div.append(p);
+        div.append(btn);
+
+        return div;
+    }
+
+
+    function changeTaskState() {
+        if (this.checked) {
+            this.parentElement.classList.add("completed");
+        } else {
+            this.parentElement.classList.remove("completed");
+        }
+    }
+
+    function addTaskHandler() {
+        if (taskNameInput.value) {
+            if (!startMessage.hidden) startMessage.hidden = true;
+
+            let newTask = createTask(taskNameInput.value);
+            taskList.append(newTask);
+            taskNameInput.value = "";
+        } else {
+            alert("введите имя задачи");
+        }
+    }
+</script>
+
+</body>-->
+
+<!--Events part 2-->
+
+<!--Task 1-->
+<!--<body>
+<div id="colorOutput">
+</div>
+
+<script>
+    /*
+    Задание:
+    Сделайте так, чтобы при нажатии на клавишу G фон div#colorOutput становился зеленым.
+    при нажатии на клавишу R фон div#colorOutput становился красным,
+    а при нажатии на клавишу B фон div#colorOutput становился синим.
+    */
+
+    let div = document.querySelector('#colorOutput');
+
+    document.addEventListener('keydown', function (e) {
+        switch (e.key) {
+            case 'G':
+            case 'g':
+                div.style.backgroundColor = 'green';
+                break;
+            case 'R':
+            case 'r':
+                div.style.backgroundColor = 'red';
+                break;
+            case "B":
+            case "b":
+                div.style.backgroundColor = "blue";
+                break;
+        }
+
+    });
+
+</script>
+
+</body>-->
+<!--Task 2-->
+<!--<script>
+    /*
+    Задание:
+    Не изменяя расположения элемента script, исправьте ошибку сценария.
+    При загрузке данного сценария на странице должно отобразиться сообщение Hello world
+    */
+
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector("#output").textContent = "Hello world";
+    })
+
+</script>
+
 <body>
-<h1>Hello</h1>
+<div id="output">
+
+</div>
+
+</body>-->
+<!--Task 3-->
+<!--<body>
+<div></div>
+<div></div>
+<div></div>
+
+<script>
+    /*
+    Задание:
+    Реализуйте сценарий, который при нажатии на клавиши 1, 2 или 3 на клавиатуре будет добавлять рамку
+    красного цвета на соответствующий div. Если зажаты клавиши Ctrl + A, то красная рамка добавляется сразу
+    для всех div
+    */
+
+    let div = document.querySelectorAll('div');
+
+    let div1 = document.querySelector('div:nth-child(1)');
+    let div2 = document.querySelector('div:nth-child(2)');
+    let div3 = document.querySelector('div:nth-child(3)');
+
+
+    document.addEventListener('keydown', function (e) {
+        switch (e.key) {
+            case '1':
+                div1.style.border = '3px solid red';
+                break;
+            case '2':
+                div2.style.border = '3px solid red';
+                break;
+            case "3":
+                div3.style.border = '3px solid red';
+                break;
+            case ("Ctrl" && 'A'):
+                div.forEach((div) => div.style.border = '3px solid red')
+                break;
+        }
+    });
+
+/*    let divArray = document.querySelectorAll("div");
+    document.addEventListener("keydown", function (e) {
+        switch (e.key) {
+            case "1":
+            case "2":
+            case "3":
+                setBorder(e.key - 1);
+                break;
+        }
+        if (e.code == "KeyA" && e.ctrlKey) {
+            setBorder(0);
+            setBorder(1);
+            setBorder(2);
+        }
+    });
+
+    function setBorder(divPosition) {
+        divArray[divPosition].style.border = "5px solid red";
+    }*/
+
+</script>
+
+</body>-->
+<!--Task 4-->
+<!--<body>
+<div id="element"></div>
+
+<script>
+    /*
+    Задание:
+    Внесите изменения в сценарий. Сделайте чтобы при зажатой клавише Shift и нажатии стрелок на
+    клавиатуре элемент по странице двигался в два раза быстрей, чем если просто нажимать на стрелки.
+    */
+    let div = document.querySelector("#element");
+    let distance = 10;
+
+    document.addEventListener("keydown", function (e) {
+        let moveBy = distance;
+        if (e.shiftKey) moveBy *= 2;
+        switch (e.code) {
+            case "ArrowLeft":
+                moveLeft(div, moveBy);
+                break;
+            case "ArrowRight":
+                moveRight(div, moveBy);
+                break;
+            case "ArrowUp":
+                moveUp(div, moveBy);
+                break;
+            case "ArrowDown":
+                moveDown(div, moveBy);
+                break;
+        }
+    });
+
+    function moveUp(element, distance) {
+        let top = getComputedStyle(element).top;
+        element.style.top = parseInt(top) - distance + "px";
+    }
+
+    function moveDown(element, distance) {
+        let top = getComputedStyle(element).top;
+        element.style.top = parseInt(top) + distance + "px";
+    }
+
+    function moveLeft(element, distance) {
+        let left = getComputedStyle(element).left;
+        element.style.left = parseInt(left) - distance + "px";
+    }
+
+    function moveRight(element, distance) {
+        let left = getComputedStyle(element).left;
+        element.style.left = parseInt(left) + distance + "px";
+    }
+</script>
+
+</body>-->
+<!--Task 5-->
+<!--<body>
+<ul id="userList">
+
+</ul>
+
+<div id="output"></div>
+<script>
+    /*
+    Задание:
+    Доработайте сценарий.
+    Сделайте так, чтобы при наведении на имя пользователя в списке, в div#output отображались
+    возраст (age), баланс (balance), компания (company) и email данного пользователя
+    */
+
+    let users = [
+        {
+            balance: '1250.89',
+            age: 24,
+            name: {
+                first: 'Golden',
+                last: 'Clements'
+            },
+            company: 'EWAVES',
+            email: 'golden.clements@ewaves.io'
+        },
+        {
+            balance: '3637.94',
+            age: 23,
+            name: {
+                first: 'Francis',
+                last: 'Hebert'
+            },
+            company: 'XPLOR',
+            email: 'francis.hebert@xplor.biz'
+        },
+        {
+            balance: '1106.44',
+            age: 31,
+            name: {
+                first: 'Hale',
+                last: 'Cross'
+            },
+            company: 'EARTHPURE',
+            email: 'hale.cross@earthpure.us'
+        },
+        {
+            balance: '2502.43',
+            age: 25,
+            name: {
+                first: 'Delores',
+                last: 'Sykes'
+            },
+            company: 'ASSITIA',
+            email: 'delores.sykes@assitia.com'
+        },
+        {
+            balance: '3651.54',
+            age: 21,
+            name: {
+                first: 'Ryan',
+                last: 'Bolton'
+            },
+            company: 'MOLTONIC',
+            email: 'ryan.bolton@moltonic.biz'
+        },
+        {
+            balance: '1345.79',
+            age: 21,
+            name: {
+                first: 'Carey',
+                last: 'Schwartz'
+            },
+            company: 'UXMOX',
+            email: 'carey.schwartz@uxmox.info'
+        },
+        {
+            balance: '3261.11',
+            age: 30,
+            name: {
+                first: 'Trevino',
+                last: 'Mullins'
+            },
+            company: 'TERRASYS',
+            email: 'trevino.mullins@terrasys.org'
+        },
+        {
+            balance: '1659.17',
+            age: 20,
+            name: {
+                first: 'Gilliam',
+                last: 'Mendez'
+            },
+            company: 'ZENTHALL',
+            email: 'gilliam.mendez@zenthall.tv'
+        },
+        {
+            balance: '2340.54',
+            age: 32,
+            name: {
+                first: 'Brewer',
+                last: 'Vargas'
+            },
+            company: 'QIMONK',
+            email: 'brewer.vargas@qimonk.co.uk'
+        },
+        {
+            balance: '1736.91',
+            age: 24,
+            name: {
+                first: 'Newman',
+                last: 'Wynn'
+            },
+            company: 'VISALIA',
+            email: 'newman.wynn@visalia.name'
+        }
+    ];
+
+    let userList = document.querySelector("#userList");
+    let outputList = document.querySelector("#output");
+
+    for (let index = 0; index < users.length; index++) {
+        const currentUser = users[index];
+        let li = document.createElement("li");
+        li.textContent = currentUser.name.first + " " + currentUser.name.last;
+
+        li.addEventListener("mouseenter", function mouseEnterHandler() {
+            let li = document.createElement("div");
+            li.innerText = `Возраст - ${currentUser.age},
+            Баланс - ${currentUser.balance},
+            Компания - ${currentUser.company},
+            Email - ${currentUser.email}`;
+            outputList.append(li);
+        });
+
+        li.addEventListener("mouseleave", function mouseLeaveHandler() {
+            while (outputList.firstChild) {
+                outputList.removeChild(outputList.firstChild);
+            }
+        });
+
+        userList.append(li);
+    }
+
+</script>
+
+</body>-->
+
+<!--Events part 3-->
+
+<!--Task 1-->
+<!--<body>
+<button>Click me!</button>
+<script>
+    /*
+    Задание:
+    Добавьте для кнопки два обработчика, один должен сработать в фазе capturing, второй - в фазе bubbling
+    */
+
+    let btn = document.querySelector('button');
+    btn.addEventListener('click', function () {
+        console.log('capturing');
+    }, true);
+
+    btn.addEventListener('click', function () {
+        console.log('bubbling');
+    })
+
+</script>
+
+</body>-->
+<!--Task 2-->
+<!--<body>
+<ul id="userList"></ul>
+<div id="output"></div>
+
+<script>
+    /*
+    Задание:
+    Доработайте сценарий.
+    Воспользуйтесь делегированием при добавлении обработчиков на событие click для li
+    В данном сценарии обработчик добавляется для каждого li, сделайте так, чтобы обработчик добавлялся для ul
+    Строка, которая требует изменений, помечена комментарием '!!!'
+    */
+
+    let users = [
+        {
+            balance: '1250.89',
+            age: 24,
+            name: {
+                first: 'Golden',
+                last: 'Clements'
+            },
+            company: 'EWAVES',
+            email: 'golden.clements@ewaves.io'
+        },
+        {
+            balance: '3637.94',
+            age: 23,
+            name: {
+                first: 'Francis',
+                last: 'Hebert'
+            },
+            company: 'XPLOR',
+            email: 'francis.hebert@xplor.biz'
+        },
+        {
+            balance: '1106.44',
+            age: 31,
+            name: {
+                first: 'Hale',
+                last: 'Cross'
+            },
+            company: 'EARTHPURE',
+            email: 'hale.cross@earthpure.us'
+        },
+        {
+            balance: '2502.43',
+            age: 25,
+            name: {
+                first: 'Delores',
+                last: 'Sykes'
+            },
+            company: 'ASSITIA',
+            email: 'delores.sykes@assitia.com'
+        },
+        {
+            balance: '3651.54',
+            age: 21,
+            name: {
+                first: 'Ryan',
+                last: 'Bolton'
+            },
+            company: 'MOLTONIC',
+            email: 'ryan.bolton@moltonic.biz'
+        },
+        {
+            balance: '1345.79',
+            age: 21,
+            name: {
+                first: 'Carey',
+                last: 'Schwartz'
+            },
+            company: 'UXMOX',
+            email: 'carey.schwartz@uxmox.info'
+        },
+        {
+            balance: '3261.11',
+            age: 30,
+            name: {
+                first: 'Trevino',
+                last: 'Mullins'
+            },
+            company: 'TERRASYS',
+            email: 'trevino.mullins@terrasys.org'
+        },
+        {
+            balance: '1659.17',
+            age: 20,
+            name: {
+                first: 'Gilliam',
+                last: 'Mendez'
+            },
+            company: 'ZENTHALL',
+            email: 'gilliam.mendez@zenthall.tv'
+        },
+        {
+            balance: '2340.54',
+            age: 32,
+            name: {
+                first: 'Brewer',
+                last: 'Vargas'
+            },
+            company: 'QIMONK',
+            email: 'brewer.vargas@qimonk.co.uk'
+        },
+        {
+            balance: '1736.91',
+            age: 24,
+            name: {
+                first: 'Newman',
+                last: 'Wynn'
+            },
+            company: 'VISALIA',
+            email: 'newman.wynn@visalia.name'
+        }
+    ];
+
+    let userList = document.querySelector("#userList");
+    userList.addEventListener("click", mouseEnterHandler); /*!!!*/
+
+    for (let index = 0; index < users.length; index++) {
+        const currentUser = users[index];
+        let li = document.createElement("li");
+        li.textContent = currentUser.name.first + " " + currentUser.name.last;
+        li.dataset.userNumber = index;
+        userList.append(li);
+    }
+
+    function mouseEnterHandler(e) {
+        if(e.target.tagName !== 'LI') return;
+
+        const currentUser = users[e.target.dataset.userNumber];
+        let message = "";
+        message += "Company " + currentUser.company + "<br />";
+        message += "Balance " + currentUser.balance + "<br />";
+        message += "Email " + currentUser.email + "<br />";
+        message += "Age " + currentUser.age + "<br />";
+
+        document.querySelector("#output").innerHTML = message;
+    }
+</script>
+
+</body>-->
+<!--Task 3-->
+<!--<body>
+<button>Кнопка 1</button>
+<button>Кнопка 2</button>
+<button>Кнопка 3</button>
+
+<script>
+    /*
+    Задание:
+    Перепишите сценарий таким образом, чтобы в коде устанавливался один обработчик для всех трех кнопок, при этом
+    результат работы сценария не должен измениться.
+    */
+    let body = document.querySelector('body');
+    body.addEventListener("click", clickHandler);
+
+    // let buttons = document.querySelectorAll("button");
+    // buttons.forEach(btn => {
+    //     btn.addEventListener("click", clickHandler);
+    // });
+
+    function clickHandler(e) {
+
+        alert(e.target.innerText);
+    }
+</script>
+
+</body>-->
+<!--Task 4-->
+<!--<body>
+Операнд 1: <input id="input1" type="text"> <br>
+Операнд 2: <input id="input2" type="text"> <br>
+
+<button id="add-btn">+</button>
+<button id="rem-btn">-</button>
+<button id="mul-btn">*</button>
+<button id="div-btn">/</button>
+
+<script>
+    /*
+    Задание:
+    Перепишите сценарий таким образом, чтобы в коде был только один обработчик на событие click (вместо четырех обработчиков).
+    Результат работы сценария не должен измениться.
+    */
+    let input1 = document.querySelector("#input1");
+    let input2 = document.querySelector("#input2");
+
+    document.querySelector('body').addEventListener("click", function (e) {
+        if (e.target.tagName !== 'BUTTON') return;
+
+        let value1 = Number(input1.value);
+        let value2 = Number(input2.value);
+        let operator = e.target.innerText;
+        let result;
+
+        if (operator === '+') result = value1 + value2;
+        if (operator === '-') result = value1 - value2;
+        if (operator === '*') result = value1 * value2;
+        if (operator === '/') result = value1 / value2;
+
+        alert(result);
+    });
+
+</script>
+
+</body>-->
+<!--Task 5-->
+<!--<body>
+<div id="generateButton">Generate</div>
+<div id="interactivePanel"></div>
+&lt;!&ndash;<script>
+    /*
+    Задание:
+    Допишите сценарий, при нажатии на кнопку Generate, с помощью функции generateElement, должно создаваться 100 элементов и размещаться в
+    элементе interactivePanel. При повторном нажатии на кнопку, содержимое interactivePanel должно удалятся, после чего создаваться новые 100 элементов.
+    Все элементы с классом interactiveElement должны поддерживать перетаскивание мышью, при левом клике клавиши по элементу он должен перемещаться
+    за курсором до момента обжатия клавиши мыши.
+    */
+
+    document.querySelector('body').addEventListener('click', generateElement);
+
+    // Создает и возвращает div с классом interactiveElement со случайной позицией в текущем окне
+    function generateElement() {
+
+        let div = document.createElement("div");
+        div.classList.add("interactiveElement");
+        let maxLeft = window.innerWidth - 50; // ширина текущего документа
+        let maxTop = window.innerHeight - 150; // высота текущего документа
+        div.style.top = getRandomValue(maxTop) + "px";
+        div.style.left = getRandomValue(maxLeft) + "px";
+        div.style.backgroundColor = getRandomColor();
+        return div;
+    }
+
+    // возвращает случайное значение цвета
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[getRandomValue(16)];
+        }
+        return color;
+    }
+
+    // возвращает случайное значение от 0 до max
+    function getRandomValue(max) {
+        return Math.floor(Math.random() * max);
+    }
+</script>&ndash;&gt;
+
+<script>
+
+let generateButton = document.querySelector("#generateButton");
+let interactivePanel = document.querySelector("#interactivePanel");
+let move = false;
+let offsetX, offsetY;
+let currentDiv;
+const generateButtonHeight = parseInt(getComputedStyle(generateButton).height); // parseInt конвертирует строку с буквенными символами и числами в конце в число, например 100px в 100
+
+generateButton.addEventListener("click", function () {
+interactivePanel.innerHTML = ""; // удаляем все содержимое
+for (let i = 0; i < 100; i++) {
+interactivePanel.append(generateElement());
+}
+});
+
+interactivePanel.addEventListener("mousedown", function (e) {
+if (e.target.classList.contains("interactiveElement")) { // обрабатываем событие только от элементаов с классом interactiveElement
+move = true;
+offsetX = e.offsetX;
+offsetY = e.offsetY;
+currentDiv = e.target;
+}
+});
+
+interactivePanel.addEventListener("mousemove", function (e) {
+if (move) {
+currentDiv.style.top = e.clientY - offsetY - generateButtonHeight + "px";
+currentDiv.style.left = e.clientX - offsetX + "px";
+}
+});
+
+interactivePanel.addEventListener("mouseup", function (e) {
+move = false;
+});
+
+// Создает и возвращает div с классом interactiveElement со случайной позицией в текущем окне
+function generateElement() {
+let div = document.createElement("div");
+div.classList.add("interactiveElement");
+let maxLeft = window.innerWidth - 50; // ширина текущего документа
+let maxTop = window.innerHeight - 150; // высота текущего документа
+div.style.top = getRandomValue(maxTop) + "px";
+div.style.left = getRandomValue(maxLeft) + "px";
+div.style.backgroundColor = getRandomColor();
+return div;
+}
+
+// возвращает случайное значение цвета
+function getRandomColor() {
+var letters = '0123456789ABCDEF';
+var color = '#';
+for (var i = 0; i < 6; i++) {
+color += letters[getRandomValue(16)];
+}
+return color;
+}
+
+// возвращает случайное значение от 0 до max
+function getRandomValue(max) {
+return Math.floor(Math.random() * max);
+}
+</script>
+
+</body>-->
+
+<!--HTML templates-->
+
+<!--Task 1-->
+<!--<body>
+<template id="template">
+    <div>
+        Название книги: <span id="titlePlaceholder"></span> <br>
+        Автор: <span id="authorPlaceholder"></span>
+        <hr>
+    </div>
+</template>
+
+<script>
+    /*
+    Задание:
+    Не используя посторонние библиотеки выведите содержимое массива books на экран используя шаблон #template
+    В шаблоне элемент #titlePlaceholder используйте для отображения свойства title из объекта, находящегося в массиве books.
+    В шаблоне элемент #authorPlaceholder используйте для отображения свойства author из объекта, находящегося в массиве books.
+    */
+    let books = [
+        {
+            title: "JavaScript. Полное руководство 7-е издание",
+            author: "Дэвид Флэнаган"
+        },
+        {
+            title: "JavaScript. Шаблоны",
+            author: "Стоян Стефанов"
+        },
+        {
+            title: "Секреты JavaScript ниндзя",
+            author: "Секреты JavaScript ниндзя"
+        }
+    ];
+
+let template = document.querySelector('#template').content.cloneNode(true);
+
+books.forEach(item => {
+    let template = document.querySelector('#template').content.cloneNode(true);
+    template.querySelector('#titlePlaceholder').textContent = item.title;
+    template.querySelector('#authorPlaceholder').textContent = item.author;
+    document.body.appendChild(template);
+});
+
+</script>
+
+</body>-->
+<!--Task 2-->
+<!--<body>
+<template id="template">
+    <div>
+        <p>Название книги: {{title}}</p>
+        <p> Автор: {{author}}</p>
+        <hr>
+    </div>
+</template>
+
+<script src="mustache.min.js"></script>
+<script>
+    /*
+    Задание:
+    Используя библиотеку mustache.js выведите содержимое массива books на экран используя шаблон #template
+    Выполните рефакторинг (изменения структуры кода без изменения результата) шаблона #template таким образом, чтобы
+    название книги и имя автора выводились без использования span с уникальными id, а через инструменты mustache.js
+    */
+    let books = [
+        {
+            title: "JavaScript. Полное руководство 7-е издание",
+            author: "Дэвид Флэнаган"
+        },
+        {
+            title: "JavaScript. Шаблоны",
+            author: "Стоян Стефанов"
+        },
+        {
+            title: "Секреты JavaScript ниндзя",
+            author: "Секреты JavaScript ниндзя"
+        }
+    ];
+
+let template = document.querySelector('template').innerHTML;
+
+for (let i = 0; i < books.length; i++) {
+    const book = books[i];
+        let render = Mustache.render(template, book);
+        document.body.innerHTML += render;
+    }
+
+</script>
+
+</body>-->
+<!--Task 3-->
+<!--<body>
+<div class="input-panel">
+    <input type="text" id="task-name-input">
+    <button id="add-task-btn">Добавить задачу</button>
+</div>
+
+<div class="task-list">
+    <p id="start-message">Нет новых задач</p>
+</div>
+
+<template id="template">
+    <div class="task">
+        <input type="checkbox">
+        <p>{{text}}</p>
+    </div>
+</template>
+
+<script src="mustache.min.js"></script>
+&lt;!&ndash;<script>
+    /*
+    Задание:
+    Внесите необходимые правки в шаблон #template (подключите библиотеку mustache.js или используйте чистый JavaScript)
+    Перепишите функцию createTask таким образом, чтобы новые задачи создавались с помощью шаблона #template а не через document.createElement
+    */
+    let taskNameInput = document.querySelector("#task-name-input");
+    let addTaskButton = document.querySelector("#add-task-btn");
+    let startMessage = document.querySelector("#start-message");
+    let taskList = document.querySelector(".task-list");
+
+    let template = document.querySelector('#template').innerHTML;
+    addTaskButton.addEventListener("click", addTaskHandler);
+    taskList.addEventListener("click", changeTaskState);
+
+
+    function createTask(text) {
+        return Mustache.render(template, {text: text});
+    }
+
+    function changeTaskState(e) {
+        // Если событие пришло не от checkbox - игнорируем его
+        if (e.target.nodeName !== "input" && e.target.type !== "checkbox") {
+            return;
+        }
+
+        if (e.target.checked) {
+            e.target.parentElement.classList.add("completed");
+        } else {
+            e.target.parentElement.classList.remove("completed");
+        }
+    }
+
+    function addTaskHandler() {
+        if (taskNameInput.value) {
+            if (!startMessage.hidden) startMessage.hidden = true;
+
+            let newTask = createTask(taskNameInput.value);
+            taskList.insertAdjacentHTML("afterbegin", newTask);
+            taskNameInput.value = "";
+        } else {
+            alert("введите имя задачи");
+        }
+    }
+
+</script>&ndash;&gt;
+
+<script>
+    /*
+    Задание:
+    Внесите необходимые правки в шаблон #template (подключите библиотеку mustache.js или используйте чистый JavaScript)
+    Перепишите функцию createTask таким образом, чтобы новые задачи создавались с помощью шаблона #template а не через document.createElement
+    */
+    let taskNameInput = document.querySelector("#task-name-input");
+    let addTaskButton = document.querySelector("#add-task-btn");
+    let startMessage = document.querySelector("#start-message");
+    let taskList = document.querySelector(".task-list");
+
+    let templateContent = document.querySelector("#template").innerHTML;
+
+    addTaskButton.addEventListener("click", addTaskHandler);
+    taskList.addEventListener("click", changeTaskState);
+
+    function createTask(text) {
+        let div = Mustache.render(templateContent, { text: text });
+        return div;
+    }
+
+    function changeTaskState(e) {
+        // Если событие пришло не от checkbox - игнорируем его
+        if (e.target.nodeName != "input" && e.target.type != "checkbox") {
+            return;
+        }
+
+        if (e.target.checked) {
+            e.target.parentElement.classList.add("completed");
+        } else {
+            e.target.parentElement.classList.remove("completed");
+        }
+    }
+
+    function addTaskHandler() {
+        if (taskNameInput.value) {
+            if (!startMessage.hidden) startMessage.hidden = true;
+
+            let newTask = createTask(taskNameInput.value);
+            taskList.insertAdjacentHTML("afterbegin", newTask);
+            taskNameInput.value = "";
+        } else {
+            alert("введите имя задачи");
+        }
+    }
+</script>
+
+</body>-->
+<!--Task 4-->
+<!--<body>
+
+<table>
+    <thead>
+    <tr>
+        <th>Month</th>
+        <th>Amount</th>
+    </tr>
+    </thead>
+    <tbody>
+    <template id="templateForTable">
+        <tr>
+            <td>{{month}}</td>
+            <td>{{amount}}</td>
+        </tr>
+    </template>
+    </tbody>
+</table>
+
+<script src="mustache.min.js"></script>
+<script>
+    /*
+    Задание:
+    Создайте шаблон и выведите содержимое массива source в таблице на текущей странице.
+    Свойство month должно выводиться в первый столбец, а свойство amount во второй столбец таблицы.
+    Количество строк таблицы должно соответствовать количеству элементов массива source. Используйте любой удобный способ работы с шаблонами.
+    */
+
+    let source = [
+        {
+            month: "Январь",
+            amount: 20
+        },
+        {
+            month: "Февраль",
+            amount: 140
+        },
+        {
+            month: "Март",
+            amount: 115
+        },
+        {
+            month: "Апрель",
+            amount: 100
+        },
+        {
+            month: "Март",
+            amount: 80
+        },
+        {
+            month: "Июнь",
+            amount: 90
+        },
+        {
+            month: "Июль",
+            amount: 100
+        }
+    ];
+
+    let tbody = document.querySelector('tbody');
+    let templateForTable = document.querySelector('#templateForTable').innerHTML;
+
+    source.forEach(item => {
+        tbody.innerHTML += Mustache.render(templateForTable, item);
+    })
+
+</script>
+
+</body>-->
+<!--Task 5-->
+<!--<body>
+<p>Пользователи системы:</p>
+<ul id="usersList">
+<template id="template">
+    <li>
+        {{name.first}} {{name.last}} ({{email}})
+    </li>
+</template>
+</ul>
+
+<script src="mustache.min.js"></script>
+<script>
+    /*
+    Задание:
+    Перепишите код таким образом, чтобы в нем использовались шаблоны.
+    Результат работы данного кода не должен измениться.
+    */
+    let users = [
+        {
+            balance: '1250.89',
+            age: 24,
+            name: {
+                first: 'Golden',
+                last: 'Clements'
+            },
+            company: 'EWAVES',
+            email: 'golden.clements@ewaves.io',
+            favoriteFruit: 'strawberry'
+        },
+        {
+            balance: '3637.94',
+            age: 23,
+            name: {
+                first: 'Francis',
+                last: 'Hebert'
+            },
+            company: 'XPLOR',
+            email: 'francis.hebert@xplor.biz',
+            favoriteFruit: 'apple'
+        },
+        {
+            balance: '1106.44',
+            age: 31,
+            name: {
+                first: 'Hale',
+                last: 'Cross'
+            },
+            company: 'EARTHPURE',
+            email: 'hale.cross@earthpure.us',
+            favoriteFruit: 'strawberry'
+        },
+        {
+            balance: '2502.43',
+            age: 25,
+            name: {
+                first: 'Delores',
+                last: 'Sykes'
+            },
+            company: 'ASSITIA',
+            email: 'delores.sykes@assitia.com',
+            favoriteFruit: 'strawberry'
+        },
+        {
+            balance: '3651.54',
+            age: 21,
+            name: {
+                first: 'Ryan',
+                last: 'Bolton'
+            },
+            company: 'MOLTONIC',
+            email: 'ryan.bolton@moltonic.biz',
+            favoriteFruit: 'apple'
+        },
+        {
+            balance: '1345.79',
+            age: 21,
+            name: {
+                first: 'Carey',
+                last: 'Schwartz'
+            },
+            company: 'UXMOX',
+            email: 'carey.schwartz@uxmox.info',
+            favoriteFruit: 'banana'
+        },
+        {
+            balance: '3261.11',
+            age: 30,
+            name: {
+                first: 'Trevino',
+                last: 'Mullins'
+            },
+            company: 'TERRASYS',
+            email: 'trevino.mullins@terrasys.org',
+            favoriteFruit: 'banana'
+        },
+        {
+            balance: '1659.17',
+            age: 20,
+            name: {
+                first: 'Gilliam',
+                last: 'Mendez'
+            },
+            company: 'ZENTHALL',
+            email: 'gilliam.mendez@zenthall.tv',
+            favoriteFruit: 'strawberry'
+        },
+        {
+            balance: '2340.54',
+            age: 32,
+            name: {
+                first: 'Brewer',
+                last: 'Vargas'
+            },
+            company: 'QIMONK',
+            email: 'brewer.vargas@qimonk.co.uk',
+            favoriteFruit: 'apple'
+        },
+        {
+            balance: '1736.91',
+            age: 24,
+            name: {
+                first: 'Newman',
+                last: 'Wynn'
+            },
+            company: 'VISALIA',
+            email: 'newman.wynn@visalia.name',
+            favoriteFruit: 'apple'
+        }
+    ];
+
+    let list = document.querySelector("#usersList");
+    let templateForList = document.querySelector('#template').innerHTML;
+
+    users.forEach(item => {
+        list.innerHTML += Mustache.render(templateForList, item);
+    })
+
+</script>
+
+</body>-->
+
+<!--Constructor functions -->
+
+<!--Task 1-->
+<!--<body>
+<script>
+    /*
+    Задание:
+    Выполните рефакторинг кода. Сделайте так, чтобы объекты создавались не через литералы, а через функцию конструктор.
+    */
+
+    function Constructor(firstName, lastName) {
+           this.firstName = firstName;
+           this.lastName = lastName;
+
+        Constructor.prototype.show = function () {
+               console.log(this.firstName + " " + this.lastName);
+           }
+    }
+
+    let user1 = new Constructor("Ivan", "Ivanov");
+    let user2 = new Constructor("Olga", "Petrova");
+
+    // let user1 = {
+    //     firstName: "Ivan",
+    //     lastName: "Ivanov",
+    //
+    //     show: function () {
+    //         console.log(this.firstName + " " + this.lastName);
+    //     }
+    // }
+    //
+    // let user2 = {
+    //     firstName: "Olga",
+    //     lastName: "Petrova",
+    //
+    //     show: function () {
+    //         console.log(this.firstName + " " + this.lastName);
+    //     }
+    // }
+
+    user1.show();
+    user2.show();
+</script>
+
+</body>-->
+<!--Task 2-->
+<!--<body>
+<script>
+    /*
+    Задание:
+    Выполните рефакторинг кода. Замените фабричный метод createUser на функцию конструктор.
+    */
+
+    function CreateUser(login, email) {
+        this.login = login;
+        this.email = email;
+
+        CreateUser.prototype.showContactInfo = function () {
+            console.log("Мой логин " + this.login + ", мой email " + this.email);
+        }
+
+    }
+
+    let user1 = new CreateUser("admin", "admin@example.com");
+    let user2 = new CreateUser("user", "user@example.com");
+
+    user1.showContactInfo();
+    user2.showContactInfo();
+</script>
+
+</body>-->
+<!--Task 3-->
+<!--<body>
+<div class="car-info" id="placeholder1"></div>
+<div class="car-info" id="placeholder2"></div>
+<div class="car-info" id="placeholder3"></div>
+
+<script>
+    /*
+    Задание:
+    Найдите и исправьте ошибку в коде.
+    */
+
+    function Car(image, manufacturer, model, year, VIN) {
+        this.image = image;
+        this.manufacturer = manufacturer;
+        this.model = model;
+        this.year = year;
+        this.VIN = VIN;
+
+        this.showStats = function (element) {
+            element.insertAdjacentHTML("beforeend", `<img src="images/${this.image}" /><br />`);
+            element.insertAdjacentHTML("beforeend", `Производитель: ${this.manufacturer}<br />`);
+            element.insertAdjacentHTML("beforeend", `Модель: ${this.model}<br />`);
+            element.insertAdjacentHTML("beforeend", `Год выпуска: ${this.year}<br />`);
+            element.insertAdjacentHTML("beforeend", `VIN: ${this.VIN}<br />`);
+        };
+    }
+
+    let car1 = new Car("audi-a6-250.jpg", "Audi", "A6", 2011, "ABCD1234567890XYZ");
+    let car2 = new Car("jaguar-x-type-250.jpg", "Jaguar", "X-Type", 2008, "DCAF0987654321XYZ");
+    let car3 = new Car("porsche-carrera-911-250.jpg", "Porsce", "Carrera 911", 2011, "EFGH0987654321XYZ");
+
+    let placeholder1 = document.querySelector("#placeholder1");
+    let placeholder2 = document.querySelector("#placeholder2");
+    let placeholder3 = document.querySelector("#placeholder3");
+
+    car1.showStats(placeholder1);
+    car2.showStats(placeholder2);
+    car3.showStats(placeholder3);
+</script>
+
+</body>-->
+<!--Task 4-->
+<!--<body>
+<script>
+    /*
+    Задание:
+    Перепишите функцию конструктор Rect. Вынесите методы из экземпляра в прототип.
+    */
+
+    function Rect(width, height) {
+        this.width = width;
+        this.height = height;
+
+        Rect.prototype.getArea = function () {
+            return this.height * this.width;
+        }
+
+        Rect.prototype.getPerimeter = function () {
+            return this.height * 2 + this.width * 2;
+        }
+    }
+
+    let rect1 = new Rect(100, 50);
+    let rect2 = new Rect(25, 33);
+
+    console.log("rect1 area " + rect1.getArea());
+    console.log("rect1 perimeter " + rect1.getPerimeter());
+
+    console.log("rect2 area " + rect2.getArea());
+    console.log("rect2 perimeter " + rect2.getPerimeter());
+</script>
+
+</body>-->
+<!--Task 5-->
+<!--<body>
+<div class="input-panel">
+    <input type="text" id="task-name-input">
+    <button id="add-task-btn">Добавить задачу</button>
+</div>
+<div class="task-list">
+    <p id="start-message">Нет новых задач</p>
+</div>
+
+<script>
+    /*
+    Задание:
+    Изучите реализацию данного примера. Примените прототипы, где это возможно.
+    */
+    let taskNameInput = document.querySelector("#task-name-input");
+    let addTaskButton = document.querySelector("#add-task-btn");
+    let startMessage = document.querySelector("#start-message");
+    let taskList = document.querySelector(".task-list");
+
+    addTaskButton.addEventListener("click", addTaskHandler);
+
+    taskNameInput.addEventListener("keydown", function (e) {
+        if (e.code === "Enter") addTaskHandler();
+    })
+
+    function addTaskHandler() {
+        if (taskNameInput.value) {
+            if (!startMessage.hidden) startMessage.hidden = true;
+
+            let newTask = new Task(taskNameInput.value);
+            newTask.createIn(taskList);
+
+            taskNameInput.value = "";
+        } else {
+            alert("введите имя задачи");
+        }
+    }
+
+    function Task(text) {
+        this.text = text;
+        this.isDone = false;
+        this.div = null;
+
+        Task.prototype.createIn = function (element) {
+            this.div = document.createElement("div");
+            this.div.classList.add("task");
+
+            let input = document.createElement("input");
+            input.addEventListener("click", () => this.changeState(this.div));
+            input.type = "checkbox";
+
+            let p = document.createElement("p");
+            p.innerText = this.text;
+
+            this.div.append(input);
+            this.div.append(p);
+            element.append(this.div);
+        }
+
+        Task.prototype.changeState = function (element) {
+            this.isDone = !this.isDone;
+            element.classList.toggle("completed");
+        }
+    }
+
+</script>
+
+</body>-->
+
+<!--Classes-->
+
+<!--Task 1-->
+<!--<body>
+<script>
+    /*
+    Задание:
+    Перепишите данный код на использование классов вместо функций-конструкторов.
+    */
+
+
+    class Car {
+        constructor(model, yaer) {
+            this.yaer = yaer;
+            this.model = model;
+        }
+
+        showInfo() {
+            console.log(this.model + " " + this.yaer);
+        }
+    }
+
+    let car1 = new Car("Audi", 2018);
+    car1.showInfo();
+
+</script>
+
+</body>-->
+<!--Task 2-->
+<!--<body>
+<script>
+    /*
+    Задание:
+    Определите класс цилиндр, который будет объектным представлением геометрического тела.
+    Класс должен содержать конструктор.
+    Конструктор должен принимать два параметра высота и радиус и инициализировать соответствующие свойства.
+    В классе должен быть определен метод getVolume, который должен возвращать значение объема данного цилиндра.
+    Создайте два экземпляра данного класса, передав произвольные значения в качестве параметров конструктора и выведите
+    на консоль значения объема двух экземпляров.
+    */
+
+    class Cylinder {
+        constructor(radius, height) {
+            this.radius = radius;
+            this.height = height;
+        }
+
+        getVolume() {
+            let volume = Math.PI * this.radius ** 2 * this.height;
+            console.log(volume);
+        }
+    }
+
+    let cylinder1 = new Cylinder(5, 10);
+    let cylinder2 = new Cylinder(3, 7);
+
+    cylinder1.getVolume();
+    cylinder2.getVolume();
+
+</script>
+
+</body>-->
+<!--Task 3-->
+<!--<body>
+<div class="car-info" id="placeholder1"><img src="images/audi-a6-250.jpg"><br>Производитель: Audi<br></div>
+<div class="car-info" id="placeholder2"><img src="images/jaguar-x-type-250.jpg"><br>Производитель: Jaguar<br></div>
+<div class="car-info" id="placeholder3"><img src="images/porsche-carrera-911-250.jpg"><br>Производитель: Porsce<br>
+</div>
+
+<script>
+    /*
+    Задание:
+    Замените функцию конструктор на класс.
+    Все свойства класса Car поменяйте на закрытые поля и для каждого поля добавьте getter и setter по необходимости.
+    Для поля html предусмотрите возможность только получения значения, организуйте код таким образом, чтобы не допустить
+    редактирование значения свойства html напрямую.
+    */
+
+    class Car {
+        #image;
+        #manufacturer;
+        #html;
+
+        constructor(image, manufacturer) {
+            this.image = image;
+            this.manufacturer = manufacturer;
+        }
+
+        get image() {
+            return this.#image;
+        }
+
+        get manufacturer() {
+            return this.#manufacturer;
+        }
+
+        get html() {
+            return `<img src="images/${this.image}" /><br />Производитель: ${this.manufacturer}<br />`;
+        }
+
+        set image(value) {
+            this.#image = value;
+        }
+
+        set manufacturer(value) {
+            this.#manufacturer = value;
+        }
+
+    }
+
+    let car1 = new Car("audi-a6-250.jpg", "Audi");
+    let car2 = new Car("jaguar-x-type-250.jpg", "Jaguar");
+    let car3 = new Car("porsche-carrera-911-250.jpg", "Porsce");
+
+    let placeholder1 = document.querySelector("#placeholder1");
+    let placeholder2 = document.querySelector("#placeholder2");
+    let placeholder3 = document.querySelector("#placeholder3");
+
+    placeholder1.innerHTML = car1.html;
+    placeholder2.innerHTML = car2.html;
+    placeholder3.innerHTML = car3.html;
+</script>
+
+</body>-->
+<!--Task 4-->
+<!--<body>
+<div class="input-panel">
+    <input type="text" id="task-name-input">
+    <button id="add-task-btn">Добавить задачу</button>
+</div>
+<div class="input-panel">
+    <button id="show-all-btn">Все</button>
+    <button id="show-not-completed-btn">Не завершенные</button>
+</div>
+<div class="task-list">
+    <p id="start-message">Нет новых задач</p>
+</div>
+
+<script>
+    /*
+    Задание:
+    Добавьте в пользовательский интерфейс две кнопки "Показать не завершенные задачи" и
+    "Показать все"
+    При нажатии на кнопку "Показать не завершенные задачи" в списке задач должны отображаться только завершенные задачи.
+    При нажатии на "Показать все" в списке задач должны отображаться все задачи.
+
+    Подсказка
+    При нажатии на кнопки, нужно удалять содержимое элемента .task-list и на основе данных, которые находятся в массиве
+    tasks, заново строить DOM выбирая из массива те объекты, у которых свойство isDone содержит соответствующее значение.
+    */
+    let taskNameInput = document.querySelector("#task-name-input");
+    let addTaskButton = document.querySelector("#add-task-btn");
+    let showAllBtn = document.querySelector("#show-all-btn");
+    let showNotCompletedBtn = document.querySelector("#show-not-completed-btn");
+    let startMessage = document.querySelector("#start-message");
+    let taskList = document.querySelector(".task-list");
+    let tasks = [];
+
+    addTaskButton.addEventListener("click", addTaskHandler);
+
+    taskNameInput.addEventListener("keydown", function (e) {
+        if (e.code === "Enter") addTaskHandler();
+    })
+
+    showAllBtn.addEventListener('click', () => {
+        taskList.innerHTML = "";
+        tasks.forEach(task => {
+                task.createIn(taskList);
+            });
+
+
+    })
+
+    showNotCompletedBtn.addEventListener('click', () => {
+        taskList.innerHTML = "";
+        tasks
+            .filter(task => task.isDone === false)
+            .forEach(task => {
+                task.createIn(taskList);
+            });
+    })
+
+    function addTaskHandler() {
+        if (taskNameInput.value) {
+            if (!startMessage.hidden) startMessage.hidden = true;
+
+            let newTask = new Task(taskNameInput.value);
+            newTask.createIn(taskList);
+            tasks.push(newTask);
+
+            taskNameInput.value = "";
+        } else {
+            alert("введите имя задачи");
+        }
+    }
+
+    class Task {
+        constructor(text) {
+            this.text = text;
+            this.isDone = false;
+            this.div = null;
+        }
+
+        createIn(element) {
+            this.div = document.createElement("div");
+            this.div.classList.add("task");
+
+            let input = document.createElement("input");
+            input.addEventListener("click", () => this.changeState(this.div));
+            input.type = "checkbox";
+
+            let p = document.createElement("p");
+            p.innerText = this.text;
+
+            this.div.append(input);
+            this.div.append(p);
+            element.append(this.div);
+        }
+
+        changeState(element) {
+            this.isDone = !this.isDone;
+            element.classList.toggle("completed");
+        }
+    }
+</script>
+
+</body>-->
+<!--Task 5-->
+<!--<body>
+<button>Создать отчет</button>
+<div id="output"></div>
+
+<template id="monthReport">
+    <div class="report-block">
+        <p>месяц {{month}}</p>
+        <p>сумма {{amount}}</p>
+        <ul></ul>
+        {{#users}} &lt;!&ndash; начало цикла для вывода массива users &ndash;&gt;
+        <li>{{.}}</li> &lt;!&ndash; . - текущий элемент массива &ndash;&gt;
+        {{/users}} &lt;!&ndash; конец цикла &ndash;&gt;
+
+    </div>
+</template>
+
+<script src="mustache.min.js"></script>
+<script>
+    /*
+        Задание:
+        Перепишите данный код с использованием классов.
+        Создайте класс MonthReport со свойствами month, amount, users.
+        Добавьте в класс метод render, который будет визуализировать содержимое класса на странице.
+        Создайте массив экземпляров класса MonthReport со значениями, которые сейчас находятся в массиве source.
+        Пройдите циклом по массиву и на каждом экземпляре класса MonthReport вызовите метод render.
+    */
+
+    // let source = [
+    //     {
+    //         month: "Январь",
+    //         amount: 20,
+    //         users: ["Claudia Contreras", "Blair Hayden", "Montgomery Cohen"]
+    //     },
+    //     {
+    //         month: "Февраль",
+    //         amount: 140
+    //     },
+    //     {
+    //         month: "Март",
+    //         amount: 115,
+    //         users: ["Blair Hayden", "Montgomery Cohen"]
+    //     }
+    // ];
+
+    let template = document.querySelector("#monthReport").innerHTML;
+    let output = document.querySelector("#output");
+
+    // document.querySelector("button").addEventListener("click", function () {
+    //     for (let i = 0; i < source.length; i++) {
+    //         const monthData = source[i];
+    //         let html = Mustache.render(template, monthData);
+    //         output.insertAdjacentHTML("beforeend", html);
+    //     }
+    // });
+
+    class MonthReport {
+        constructor(month, amount, users) {
+            this.month = month;
+            this.amount = amount;
+            this.users = users;
+        }
+
+        render(element) {
+            let html = Mustache.render(template, this);
+            output.insertAdjacentHTML("beforeend", html);
+        }
+    }
+
+    let monthReportArray = [new MonthReport("Январь", 20, ["Claudia Contreras", "Blair Hayden", "Montgomery Cohen"]), new MonthReport("Февраль", 140), new MonthReport("Март", 115, ["Blair Hayden", "Montgomery Cohen"])]
+
+    document.querySelector("button").addEventListener("click", function () {
+        monthReportArray.forEach(item => item.render(item));
+    });
+</script>
+
+</body>-->
+
+<!--Classes 2-->
+
+<!--Task 1-->
+<!--<body>
+<script>
+    /*
+    Задание:
+    Сделайте так, чтобы класс Truck наследовался от класса Car.
+    Переопределит метод move, чтобы в производном классе он выводил сообщение, "Грузовик движется со скоростью 50 км/час".
+    */
+
+    class Car {
+        start() {
+            console.log("Двигатель запущен.");
+        }
+
+        move() {
+            console.log("Машина двигается со скоростью 80 км/час");
+        }
+    }
+
+    class Truck extends Car {
+        weight;
+        loadCargo(weight) {
+            if (weight > 1000) {
+                console.log("Этот грузовик не может перевозить более 1000кг груза");
+            }
+            else {
+                this.weight = weight;
+                console.log(`В грузовик загружено ${this.weight}кг.`);
+            }
+        }
+
+        move() {
+            console.log("Грузовик движется со скоростью 50 км/час");
+        }
+    }
+
+    let v1 = new Car();
+    v1.start();
+    v1.move();
+
+    let v2 = new Truck();
+    v2.loadCargo(1500);
+    v2.loadCargo(990);
+    v2.start();
+    v2.move();
+</script>
+
+</body>-->
+<!--Task 2-->
+<!--<body>
+<script>
+    /*
+    Задание:
+    Сделайте так, чтобы класс Truck наследовался от класса Car.
+    Переопределит метод move, в классе Truck -
+    Если в грузовик загружено менее 500 кг груза, должна срабатывать реализация метода из класса Car
+    Если в грузовик загружено более 500 кг, должно выводиться сообщение "Грузовик движется со скоростью 50 км/час."
+    */
+
+    class Car {
+        move() {
+            console.log("Машина двигается со скоростью 80 км/час");
+        }
+    }
+
+    class Truck extends Car {
+        weight;
+
+        loadCargo(weight) {
+            if (weight > 1000) {
+                console.log("Этот грузовик не может перевозить более 1000кг груза");
+            } else {
+                this.weight = weight;
+                console.log(`В грузовик загружено ${this.weight}кг.`);
+            }
+        }
+
+        move() {
+            if (this.weight < 500) {
+                console.log("Машина двигается со скоростью 50 км/час")
+            }
+        }
+    }
+
+    let v1 = new Car();
+    v1.move();
+
+    let v2 = new Truck();
+    v2.loadCargo(1500);
+    v2.loadCargo(990);
+    v2.move();
+
+    let v3 = new Truck();
+    v3.loadCargo(100);
+    v3.move();
+</script>
+
+</body>-->
+<!--Task 3-->
+<!--<body>
+<script>
+    /*
+    Задание:
+    Найдите и исправьте ошибку
+    */
+
+    class Car {
+        model;
+
+        constructor(model) {
+            this.model = model;
+        }
+
+        move() {
+            console.log(`Машина ${this.model} двигается со скоростью 80 км/час`);
+        }
+    }
+
+    class Truck extends Car {
+        weight;
+        maxCargo;
+        model;
+
+        constructor(model, maxCargo) {
+            super();
+            this.model = model;
+            this.maxCargo = maxCargo;
+        }
+
+        loadCargo(weight) {
+            if (weight > this.maxCargo) {
+                console.log("Этот грузовик не может перевозить более 1000кг груза");
+            }
+            else {
+                this.weight = weight;
+                console.log(`В грузовик загружено ${this.weight}кг.`);
+            }
+        }
+    }
+
+    let v1 = new Car("Mazda");
+    v1.move();
+
+    let v2 = new Truck();
+    v2.loadCargo(1500);
+    v2.move();
+</script>
+
+</body>-->
+<!--Task 4-->
+<!--<body>
+<template id="product">
+    <div>
+        <div class="bg" style="background-image: url('{{imagePath}}');"></div>
+        <p>{{price}}$</p>
+    </div>
+</template>
+
+<template id="product-on-sale">
+    <div>
+        <div class="bg" style="background-image: url('{{imagePath}}');"></div>
+        <strike>{{oldPrice}}$</strike>
+        <p>{{price}}$</p>
+    </div>
+</template>
+
+<template id="advertisement">
+    <div>
+        <a href="{{url}}" target="_blank">
+            <div class="bg" style="background-image: url('{{imagePath}}');"></div>
+        </a>
+    </div>
+</template>
+
+<script src="mustache.min.js"></script>
+
+<script>
+    /*
+    Задание:
+    Внесите следующие правки в код:
+    1)  Сделайте так, чтобы в Catalog, в метод add можно было добавлять только объекты, которые наследовались от класса CatalogItem
+        Если вызывая метод add передается другой объект, через alert выводите сообщение "Данный метод принимает только классы производные от CatalogItem"
+    2)  Добавьте класс ProductWithDiscount - задача класса выводить продукт со скидкой, которая была указана в конструкторе
+        Наследуйте класс от класса Product
+        Добавьте для класса конструктор, через который будет добавятся скидка на продукт.
+        Сделайте так, чтобы класс самостоятельно вычислял цену продукта с учетом указанной скидки и выводил на экране базовую цену и акционную цену (Можно вывести базовую цену перечеркнутой).
+        Замените код catalog.add(new Product("images/img4.jpg", 65.55)); на catalog.add(new ProductWithDiscount("images/img4.jpg", 65.55, 20));, третий параметр 20 - скидка 20%
+        Убедитесь, что в каталоге последний продукт выводится со скидкой 20%
+    */
+    class CatalogItem {
+        template;
+        imagePath;
+
+        constructor(image, tempalteSelector) {
+            this.imagePath = image;
+            this.template = document.querySelector(tempalteSelector).innerHTML;
+
+        }
+
+        renderIn(element) {
+            let html = Mustache.render(this.template, this);
+            element.innerHTML += html;
+        }
+    }
+
+    class Product extends CatalogItem {
+        price;
+
+        constructor(imageaPath, price, templateSelector = "#product") {
+            super(imageaPath, templateSelector);
+            this.price = price;
+        }
+    }
+
+    class ProductWithDiscount extends Product {
+        discount;
+        oldPrice;
+
+        constructor(imagePath, price, discount) {
+            super(imagePath, price, "#product-on-sale");
+            this.discount = discount;
+            this.oldPrice = this.price;
+            this.price = this.price - (this.price / 100 * this.discount);
+        }
+    }
+
+    class Advertisement extends CatalogItem {
+        url;
+
+        constructor(imagePath, url) {
+            super(imagePath, "#advertisement");
+            this.url = url;
+        }
+    }
+
+    class Catalog {
+        items = [];
+        element;
+
+        constructor(elementSelector) {
+            this.element = document.querySelector(elementSelector);
+        }
+
+        add(item) {
+            if (item instanceof CatalogItem !== true) {
+                alert("Данный метод принимает только классы производные от CatalogItem");
+                return;
+            }
+
+            this.items.push(item);
+        }
+
+        show() {
+            this.items.forEach(item => {
+                item.renderIn(this.element);
+            });
+        }
+    }
+
+    let catalog = new Catalog("#catalog");
+
+    catalog.add({ test: 123 }); // проверка добавления объекта, который не наследовался от CatalogItem
+
+    catalog.add(new Product("images/img1.jpg", 35.55));
+    catalog.add(new Product("images/img2.jpg", 25.25));
+    catalog.add(new Advertisement("images/banner1.jpg", "https://itvdn.com/ru/catalog"));
+    catalog.add(new Product("images/img3.jpg", 14.55));
+    catalog.add(new ProductWithDiscount("images/img4.jpg", 65.55, 20)); // продукт со скидкой
+    catalog.add(new Advertisement("images/banner2.jpg", "https://itvdn.comru/ru/specialities"));
+
+    catalog.show();
+
+</script>
+
+
+</body>-->
+<!--Task 5-->
+<body>
+<script>
+    /*
+    Задание:
+    Создайте класс Cone (конус), который будет расширять класс Circle (наследоваться от класса Circle), конструктор класса Cone должен принимать радиус и высоту конуса.
+    В классе Cone добавьте метод getVolume, который будет возвращать объем конуса и переопределите метод getArea таким образом, чтобы он вычислял площадь полной поверхности конуса.
+    По возможности используйте логику базового класса через ключевое слово super
+    */
+    class Circle {
+        constructor(radius) {
+            this.radius = radius;
+        }
+
+        getArea() {
+            return Math.PI * Math.pow(this.radius, 2);
+        }
+    }
+
+    class Cone extends Circle {
+        constructor(height, radius) {
+            super(radius);
+            this.height = height;
+        }
+
+        getVolume() {
+            return this.height / 3 * super.getArea();
+        }
+
+        getArea() {
+            // l - образующая конуса. Находим ее как значение гипотенузы.
+            // квадрат гипотенузы равен сумме квадратов катетов
+            let l = Math.sqrt(Math.pow(this.radius, 2) + Math.pow(this.height, 2));
+            return Math.PI * this.radius * l + super.getArea();
+        }
+    }
+
+    let cone = new Cone(5, 7);
+    console.log(cone.getVolume());
+    console.log(cone.getArea());
+
+
+</script>
+
 </body>
 
 </html>
